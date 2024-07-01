@@ -6,7 +6,6 @@
 
 /*
 Variable Hoisting::
-
 3. javascript only hoists declaration not initilzation 
 4. variable will be the undefined until the line where it's initlized is reached
 */
@@ -35,7 +34,6 @@ console.log(a);
 
 /*
 Function Hoisting::
-
 9. Function declarations are fully hoisted 
 10. meaning you can call the function before you declare it
 */
