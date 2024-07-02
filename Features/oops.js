@@ -14,6 +14,7 @@ class emp {
 } 
 
 
+
 /* Objects::
 1. Object is a member of a class
 2. Each object has an identity, behaviour and a state
@@ -26,6 +27,7 @@ let person = {
     age: 25,
     city: "Exampleville"
   };
+
 
 
 /*Constructor:: 
@@ -59,6 +61,7 @@ class Animal {
   }  
 
 
+
 /* Inheritence::
 1. Inherits all the methods/properties from another class
 2. Extends keyword is use
@@ -84,6 +87,7 @@ class Student extends Person {
 
 let student1 = new Student('Jack');
 student1.greet(); 
+
 
 
 /*
@@ -124,6 +128,7 @@ const myCircle = new Circle(5);
 console.log("Circle Area:", myCircle.calculateArea());
 
 
+
 /*
 Polymorphism::
 1.  Ability to call the same method on different objects and each object responds in different way
@@ -131,9 +136,10 @@ Polymorphism::
 3. achieved through the concept of method overloading and method overriding
 
 Function Overloading - 
-1. two or more functions can have the same name but different parameters
+1. two or more functions can have the same name but different parameters.
 2. Function name should be the same and the arguments should be different.
 3. JavaScript Does not support Function Overloading.
+4. TypeScript Does  support Function Overloading.
 
 Function Overriding - 
 1. Method belongs to the parent class can be override by the same method of child class
@@ -164,6 +170,7 @@ class Audi extends Car {
 
 const audi = new Audi();
 audi.startEngine();
+
 
 
 /*
@@ -204,23 +211,3 @@ class BankAccount {
 
 let myBankAccount = new BankAccount("123456", "John Doe", 1000);
 myBankAccount.deposit(500); 
-
-
-/*
-this keyword::
-1. 'this' always refers to an object
-2. reference will vary depending on how and where 'this' is being called
-3. 'this' is not a variable – it's a keyword, so its value can't be changed or reassigned
-4. If we call 'this' by itself, not within a function or object, it will refer to the global window object
-5. we can use 'this' to access properties and methods from the same object
-*/
-
-class Animal {
-  constructor(name) {
-    this.name = name;
-  }
-
-  eat() {
-    console.log(`${this.name} is eating.`);
-  }
-}
