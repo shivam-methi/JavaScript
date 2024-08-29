@@ -84,9 +84,8 @@ constTest(); // ReferenceError: y is not defined
 ```
 
 
-/*
 | Feature            | var                             | let                               | const                             |
-|--------------------|---------------------------------|-----------------------------------|-----------------------------------|
+| ------------------ | ------------------------------- | --------------------------------- | --------------------------------- |
 | Declaration        | var x = 10;                     | let x = 10;                       | const x = 10;                     |
 | Scope              | Function or Global              | Block                             | Block                             |
 | Re-declaration     | Allowed within the same scope   | Not allowed within the same scope | Not allowed within the same scope |
@@ -94,4 +93,3 @@ constTest(); // ReferenceError: y is not defined
 | Initial Value      | Optional                        | Optional                          | Required                          |
 | Hoisting           | Yes, initialized with undefined | Yes, but not initialized          | Yes, but not initialized          |
 | Temporal Dead Zone | No                              | Yes                               | Yes                               |
-*/
