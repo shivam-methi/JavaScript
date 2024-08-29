@@ -7,10 +7,10 @@
 - javascript only hoists declaration not initilzation 
 - variable will be the undefined until the line where it's initlized is reached
 
-```javascript
-console.log(a); // undefined - following line will be exectued successfully due to JS hoisting 
-var a = 9;      // Declaration hoisted to the top but initialzation not
-console.log(a);
+```js
+  console.log(a); // undefined - following line will be exectued successfully due to JS hoisting 
+  var a = 9;      // Declaration hoisted to the top but initialzation not
+  console.log(a);
 ```
 
 
@@ -20,16 +20,16 @@ console.log(a);
 - Cannot access 'a' before initialization
 */
 
-```javascript
-console.log(a);     // Cannot access 'a' before initialization
-let a = 9;
-console.log(a);
+```js
+  console.log(a);     // Cannot access 'a' before initialization
+  let a = 9;
+  console.log(a);
 ```
 
-```javascript
-console.log(a);     // Cannot access 'a' before initialization
-const a = 9;
-console.log(a);
+```js
+  console.log(a);     // Cannot access 'a' before initialization
+  const a = 9;
+  console.log(a);
 ```
 
 
@@ -37,25 +37,25 @@ console.log(a);
 - Function declarations are fully hoisted 
 - meaning you can call the function before you declare it
 
-```javascript
-greet(); // Good morning - following line will be exectued successfully due to JS hoisting
+```js
+  greet(); // Good morning - following line will be exectued successfully due to JS hoisting
 
-function greet() {
-    console.log("Good morning");
-}
+  function greet() {
+      console.log("Good morning");
+  }
 ```
 
 ### Arrow functions:
 - arrow functions are treated like variable assignments and are not hoisted in the same way
 - Only the variable declaration is hoisted, not the assignment
 
-```javascript
-greet(); // following line will not be exectued - greet is not a function
-console.log(greet); // undefined 
+```js
+  greet(); // following line will not be exectued - greet is not a function
+  console.log(greet); // undefined 
 
-var greet = () => {
-    console.log("Good morning");
-}
+  var greet = () => {
+      console.log("Good morning");
+  }
 ```
 
 

@@ -5,7 +5,7 @@
 - If we call 'this' by itself, not within a function or object, it will refer to the global window object
 - we can use 'this' to access properties and methods from the same object
 
-```javascript
+```js
   class Animal {
       constructor(name) {
         this.name = name;

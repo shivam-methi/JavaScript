@@ -15,7 +15,7 @@
 - var has function or global scope 
 - var can be redeclared and reassigned
 
-```javascript
+```js
     var z = 30;
 
     function varTest() {
@@ -41,7 +41,7 @@
 - let has block scope 
 - let can't be redeclared but can be reassigned
 
-```javascript
+```js
     function letTest() {
 
         let x = 10;
@@ -66,7 +66,7 @@
 - const can't be redeclared and reassigned
 - However, if the variable is an object or an array, its properties or elements can still be modified.
 
-```javascript
+```js
     function constTest() {
 
         const x = 10;

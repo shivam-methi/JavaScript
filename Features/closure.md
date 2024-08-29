@@ -2,7 +2,7 @@
 - closure is created when an inner function has access to the outer function's variables
 - even after the outer function has finished executing
 
-```javascript
+```js
     function outerFunction() {
         let outerVariable = 'I am from outerFunction';
         
