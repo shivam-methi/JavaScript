@@ -4,40 +4,54 @@
 
 ### String: 
 - Represents a sequence of characters (text).
-let name = "Shivam";
 
+```javascript
+    let name = "Shivam";
+```
 
 ### Number: 
 - Represents both integer and floating-point numbers.
-let age = 25;
-let price = 99.99;
 
+```javascript
+    let age = 25;
+    let price = 99.99;
+```
 
 ### Boolean: 
 - Represents logical values true or false.
-let isAvailable = true;
 
+```javascript
+    let isAvailable = true;
+```
 
 ### Undefined: 
 - A variable that has been declared but not assigned a value.
-let x;
-console.log(x); // undefined
 
+```javascript
+    let x;
+    console.log(x); // undefined
+```
 
 ### Null: 
 - Represents an intentional absence of any object value.
-let person = null;
 
+```javascript
+    let person = null;
+```
 
 ### Symbol: 
 - Represents a unique identifier, often used for object property keys.
-let uniqueID = Symbol('id');
 
+```javascript
+    let uniqueID = Symbol('id');
+```
 
 ### BigInt: 
 - Used for integers that are too large to be represented by the Number type.
-let bigNumber = BigInt(9007199254740991) + BigInt(1);
 
+```javascript
+    let bigNumber = BigInt(9007199254740991) + BigInt(1);
+```
 
 
 
