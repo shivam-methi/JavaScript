@@ -1,5 +1,12 @@
 /* Variables::
-1. variables are used to store data  that can be manipulated and referenced throughout your code.
+1. variable is an identifier/name that stores value/data.
+2. that data can be manipulated and referenced throughout your code.
+3. variable name should start with a letter, or underscore or dollar sign.
+4. system reserved keyword can't be used. e.g. if, else, throw, break.
+5. variable names are case-sensetive. (apple, Apple)
+6. can't have same name for other types (eg. function name, object name)
+7. Multiple variables can be declared in a single line (separated by comma)
+8. when you just declare a variable, the data type will be undefined  
 */
 
 
@@ -55,8 +62,9 @@ letTest(); // ReferenceError: y is not defined
 /* const::
 1. const was introduced in ES6
 2. const has block scope 
-3. const can't be redeclared and reassigned
-4. However, if the variable is an object or an array, its properties or elements can still be modified.
+3. const variable must be declare/initialized with a value
+4. const can't be redeclared and reassigned
+5. However, if the variable is an object or an array, its properties or elements can still be modified.
 */
 
 function constTest() {
