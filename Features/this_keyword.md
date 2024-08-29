@@ -1,4 +1,4 @@
-### this keyword:
+## this keyword:
 - 'this' always refers to an object
 - reference will vary depending on how and where 'this' is being called
 - 'this' is not a variable – it's a keyword, so its value can't be changed or reassigned
