@@ -1,4 +1,4 @@
-## Promise:
+## Promises:
 
 ### Synchronous:
 - JavaScript is a synchronous language by default
