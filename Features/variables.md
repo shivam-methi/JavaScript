@@ -16,23 +16,23 @@
 - var can be redeclared and reassigned
 
 ```javascript
-var z = 30;
+    var z = 30;
 
-function varTest() {
+    function varTest() {
 
-    var x = 10;
-    if (true) {
-        console.log(z);
-        console.log(x);
+        var x = 10;
+        if (true) {
+            console.log(z);
+            console.log(x);
 
-        var y = 20;
+            var y = 20;
+        }
+
+        console.log(y);
+
     }
 
-    console.log(y);
-
-}
-
-varTest(); // 30 10 20
+    varTest(); // 30 10 20
 ```
 
 
@@ -42,20 +42,20 @@ varTest(); // 30 10 20
 - let can't be redeclared but can be reassigned
 
 ```javascript
-function letTest() {
+    function letTest() {
 
-    let x = 10;
-    if (true) {
-        console.log(x);
+        let x = 10;
+        if (true) {
+            console.log(x);
 
-        let y = 20;
+            let y = 20;
+        }
+        console.log(y);
+
+
     }
-    console.log(y);
 
-
-}
-
-letTest(); // ReferenceError: y is not defined
+    letTest(); // ReferenceError: y is not defined
 ```
 
 
@@ -67,20 +67,20 @@ letTest(); // ReferenceError: y is not defined
 - However, if the variable is an object or an array, its properties or elements can still be modified.
 
 ```javascript
-function constTest() {
+    function constTest() {
 
-    const x = 10;
-    if (true) {
-        console.log(x);
+        const x = 10;
+        if (true) {
+            console.log(x);
 
-        const y = 20;
+            const y = 20;
+        }
+        console.log(y);
+
+
     }
-    console.log(y);
 
-
-}
-
-constTest(); // ReferenceError: y is not defined
+    constTest(); // ReferenceError: y is not defined
 ```
 
 
@@ -93,3 +93,4 @@ constTest(); // ReferenceError: y is not defined
 | Initial Value      | Optional                        | Optional                          | Required                          |
 | Hoisting           | Yes, initialized with undefined | Yes, but not initialized          | Yes, but not initialized          |
 | Temporal Dead Zone | No                              | Yes                               | Yes                               |
+

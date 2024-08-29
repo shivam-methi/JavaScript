@@ -6,13 +6,13 @@
 - we can use 'this' to access properties and methods from the same object
 
 ```javascript
-class Animal {
-    constructor(name) {
-      this.name = name;
+  class Animal {
+      constructor(name) {
+        this.name = name;
+      }
+    
+      eat() {
+        console.log(`${this.name} is eating.`);
+      }
     }
-  
-    eat() {
-      console.log(`${this.name} is eating.`);
-    }
-  }
 ```
