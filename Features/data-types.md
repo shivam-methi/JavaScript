@@ -1,4 +1,4 @@
-## Data Types::
+## Data Types:
 
 ### Primitive Types:
 
@@ -54,12 +54,57 @@
 ```
 
 
+## Object Types:
 
+### Object: 
+- A collection of key-value pairs.
+  
+```javascript
+    let person = { name: "Shivam", age: 25 };
+```
 
+### Array: 
+- A list-like object that stores multiple values in a single variable.
 
+```javascript
+    let numbers = [1, 2, 3, 4];
+```
 
+### Function: 
+- A block of code designed to perform a particular task.
 
+```javascript
+    function greet() {
+    return "Hello, World!";
+    }
+```
 
+### Date: 
+- Represents date and time.
 
+```javascript
+    let today = new Date();
+```
 
+### RegExp: 
+- Represents a regular expression, used for pattern matching in strings.
+
+```javascript
+    let pattern = /abc/;
+```
+
+### Map: 
+- A collection of key-value pairs, where keys can be of any type.
+
+```javascript
+    let map = new Map();
+    map.set('name', 'Shivam');
+```
+
+### Set: 
+- A collection of unique values.
+
+```javascript
+    let set = new Set([1, 2, 3, 4]);
+```
 
