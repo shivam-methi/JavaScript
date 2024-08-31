@@ -227,5 +227,5 @@
 |--------------|-------------------------------|-------------------------------|------------------------------------|
 | Description  | Assigns a value to a variable | Compares values, ignores type | Compares both value and type       |
 | Comparison   |               -               | Checks if values are equal    | Checks if values & types are equal |
-| Example      | let x = 5;                    | 5 == "5"                      | 5 === "5"                          |
+| Example      | let x = 5;                    | 5 == "5" //number == number   | 5 === "5" //number === string      |
 | Result       | x is now 5                    | true                          | false                              |
