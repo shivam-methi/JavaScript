@@ -221,10 +221,10 @@
 
 
 
-|Feature       |Assignment `=`                 |Equality `==`                  | Strict Equality `===`              |
-|-------------------------------------------------------------------------------------------------------------------|
-|Description   | Assigns a value to a variable |Compares values, ignores type  |Compares both value and type        |
-|Comparison    |               -               |Checks if values are equal     |Checks if values and types are equal|
-|Example       |let x = 5;                     |5 == "5"                       |5 === "5"                           |
-|Result        |x is now 5                     |true                           |false                               |
-|-------------------------------------------------------------------------------------------------------------------|
+| Feature       | Assignment `=`                 | Equality `==`                  | Strict Equality `===`               |
+|---------------|--------------------------------|--------------------------------|-------------------------------------|
+| Description   | Assigns a value to a variable  | Compares values, ignores type  | Compares both value and type        |
+| Comparison    |               -                | Checks if values are equal     | Checks if values and types are equal|
+| Example       | let x = 5;                     | 5 == "5"                       | 5 === "5"                           |
+| Result        | x is now 5                     | true                           | false                               |
+|-----------------------------------------------------------------------------------------------------------------------|
