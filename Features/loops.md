@@ -1,11 +1,11 @@
 ## Loops:
-- Loops are used to Iterate over a collection(more than one element)
+- Loops are used to Iterate over a collection(more than one element).
 - Use cases:
-  - to find a specific element/member from a collection
-  - do something with all the elements
+  - to find a specific element/member from a collection.
+  - do something with all the elements.
 - General Rule: 
-- Loops should end - check condition
-- If you initiate a variable inside a loop, it reset for every iteration
+- Loops should end - check condition.
+- If you initiate a variable inside a loop, it reset for every iteration.
 
 
 ### `for` Loop:
@@ -52,7 +52,7 @@
 
 ### `while` Loop:
 - The `while` loop repeats a block of code as long as a specified condition is true.
-- Execute until a condition is met (or when the end condition is not known)
+- Execute until a condition is met (or when the end condition is not known).
 
 ```js
   // Syntex: 
@@ -127,7 +127,7 @@
 
 
 ### `for of` Loop:
-- The `for of` loop is used to iterate over the values of an iterable. i.e `Array`, `String`.
+- The `for of` loop is used to iterate over the values of an iterable. i.e. `Array`, `String`.
 
 
 ```js
