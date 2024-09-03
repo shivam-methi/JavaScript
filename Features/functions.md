@@ -71,8 +71,22 @@
 ```
 
 
-### Arrow Functions:
-- Arrow functions provide a shorter syntax and do not have their own 'this' context.
+### Arrow Functions / Fat Arrow:
+- Arrow functions provide a shorter syntax.
+- Used mostly in callback context.
+- Rules: 
+    - No “function” keyword
+    - => is must and left and right of arrow is context-driven
+    - Arrow function can be called when it’s assigned it to a variable
+    - do not have their own 'this' context
+    - 
+      | Notations  | Should present             | Can skip                       |
+      |--------------------------------------------------------------------------|
+      | ()         | If zero or more param      | If single param                |
+      | =>         | Always present             |            -                   |
+      | {}         | More than one statement    | If single statement/expression |
+      | return     | If more than one statement | If just single statement       |
+
 
 ```js
     const greet = () => {
@@ -224,3 +238,4 @@
         return sum
     })(2,2);
 ```
+
