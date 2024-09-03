@@ -79,9 +79,9 @@
     - => is must and left and right of arrow is context-driven
     - Arrow function can be called when it’s assigned it to a variable
     - do not have their own 'this' context
-
+    - 
       | Notations  | Should present             | Can skip                       |
-      |--------------------------------------------------------------------------|
+      |------------|----------------------------|--------------------------------|
       | ()         | If zero or more param      | If single param                |
       | =>         | Always present             |            -                   |
       | {}         | More than one statement    | If single statement/expression |
