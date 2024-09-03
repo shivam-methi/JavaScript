@@ -9,7 +9,7 @@
     - Anonymous function (aka function expression)
         - Callback function
         - arrow function
-- ![alt text](<../Others/function definition.png>)
+![alt text](<../Others/function definition.png>)
 
 
 ### Named Function / Function Declaration:
@@ -125,14 +125,76 @@
   then the corresponding value becomes undefined.
 
 
+
+### Rest parameter and arguments object:
+- The rest param is denoted by `...<paramName> `
+- The rest parameter syntax allows us to represent an indefinite number of arguments as an array
+- arguments object made available within the function body
+- The arguments can be access by array-like notation arguments[i]
+- It has a length property
+
+```js
+    function sum(num1, num2, ...numN) {
+        let total = 0;
+         console.log(arguments);
+         console.log(arguments[2]);     // 3
+        console.log(arguments.length);  // 4
+        for (let i = 0; i < arguments.length; i++) {
+        total += arguments[i];
+        }
+        return total;
+        }
+
+    let val = sum(2,2,3,3)
+    console.log(val);               // Output: 10
+```
+
+
 ### The return Statement:
 - The return statement stops the execution of a function and returns a value.
 
 ```js
-    function add(a, b) {
-        return a + b;
+    // Return a single primitive value
+    function addTwoNum(num1, num2) {
+    let sum = num1 + num2;
+    return sum ;
     }
-    console.log(add(2, 3));  // Output: 5
+
+
+    // Returns an expression [that evaluates to a value]
+    function addTwoNum(num1, num2) {
+    return num1 + num2;
+    }
+
+
+    // Return an object type
+    function addTwoNum(num1, num2) {
+    let sum = num1 + num2;
+    return { total: sum };
+    }
+
+
+    // Returning a function itself
+    function addTwoNum(num1, num2) {
+    return function () {
+        return num1 + num2;
+    };
+    }
+
+
+    // Return statement in conditional statement
+    function addTwoNum(num1, num2) {
+    if (!num1) {
+        return;
+    }
+    let sum = num1 + num2;
+    return sum;
+    }
+
+
+    // Calling the function
+    let total = addTwoNum(2, 2);
+    console.log(total);
 ```
 
 
@@ -149,3 +211,16 @@
     console.log(message);  // Error: message is not defined
 ```
 
+
+### Self-invoking function:
+- A self-invoking function, also known as an Immediately Invoked Function Expression (IIFE).
+- is a function in JavaScript that runs as soon as it is defined. 
+- An IIFE is commonly used to create a local scope and avoid polluting the global namespace.
+
+```js
+    (function addTwoNum (num1, num2) {
+        let sum = num1 + num2
+        console.log(sum);
+        return sum
+    })(2,2);
+```
