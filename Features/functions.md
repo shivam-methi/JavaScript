@@ -4,6 +4,7 @@
 - They allow the code to be called many times without repetition(reusability).
 - We’ve already built-in functions like: alert(message), prompt(message, default) and confirm(question).
 - we can create functions of our own as well.
+- ![alt text](<../Others/function definition.png>)
 
 
 ### Function Declaration:
