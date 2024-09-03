@@ -1,9 +1,9 @@
 ## Promises:
 
 ### Synchronous:
-- JavaScript is a synchronous language by default
-- JavaScript engine executes our program sequentially
-- one line at a time from top to bottom in the exact order of the statements
+- JavaScript is a synchronous language by default.
+- JavaScript engine executes our program sequentially.
+- one line at a time from top to bottom in the exact order of the statements.
 
 ```js
     console.log("first");
@@ -13,11 +13,15 @@
 
 
 ### Asynchronous:
-- We can make our code asynchronous in javascript
-- Unlike synchronous operations, an asynchronous operation does not block the next task
-- even if the current task isn’t completed yet
+- We can make our code asynchronous in javascript.
+- Unlike synchronous operations, an asynchronous operation does not block the next task.
+- even if the current task isn’t completed yet.
 - JavaScript engine works with additional features which allows JavaScript to behave asynchronously.
 - in JS asynchronous can be achieved using Callback, promises, async await.
+- Examples:
+  - Getting an API response
+  - DB operations
+  - I/O file operations
 
 ```js
     console.log("first");
@@ -31,10 +35,10 @@
 
 
 ### Callback:
-- When we pass a function in another fuction as function argument or parameter 
-- Nesting of callback functions are call/create callback hell
-- Hard to read & understand the code 
-- Solution is - Promises
+- When we pass a function in another fuction as function argument or parameter.
+- Nesting of callback functions are call/create callback hell.
+- Hard to read & understand the code.
+- Solution is - Promises.
 
 ```js
     function resolveAfter2Seconds(callback) {
@@ -64,10 +68,18 @@
 
 
 ### Promises:
-- Promises basically represents upcoming complition or failure of an asynchronous event and it's resulting value
+- Promises is an object that represents upcoming complition or failure of an asynchronous event 
+  and it's resulting value
+- To overcome challenges of nested callbacks/callback hell
 - Ex: Order item from Amazon, APIs 
-- States - Resolve, Reject, Pending
 - Keyword - Promise 
+- States: 
+    - Pending: Initial state before being resolved or rejected
+    - Resolve: being fullfiled/settles 
+    - Reject: being rejected  
+- Consume: 
+    - .then(): to get resolved value(success)
+    - .catch(): to get rejected value(failure)
 
 ```js
     function resolveAfter2Seconds() {
