@@ -87,12 +87,45 @@
       | {}         | More than one statement    | If single statement/expression |
       | return     | If more than one statement | If just single statement       |
 
-
 ```js
+    // 1. Convert a normal function to arrow funtion
     const greet = () => {
         console.log('Hello, World!');
     };
     greet();  // Output: Hello, World!
+
+
+    //  2. No param
+    let arrowFn = () => 10 > 5
+    let res = arrowFn()
+    console.log(res);   // Output: true
+
+
+    // 3. Single param
+    let greet = name => console.log(`Hello, ${name}!`)
+    greet("Rob");       // Output: Hello Rob!
+
+
+    // 4. More than one param(single and more than one statements)
+      let sum = (num1, num2) => num1 + num2;
+      let total = sum(2, 2)
+      console.log(total);  // Output: 4
+
+
+    // 5. forEach() method example
+    let windows = ["Google", "Amazon", "YouTube"]
+
+    windows.forEach((val, index, arr) => {
+        console.log(val);
+        console.log(index);
+    });
+    // Output:
+        // Google
+        // 0
+        // Amazon
+        // 1
+        // YouTube
+        // 2
 ```
 
 
