@@ -128,6 +128,7 @@
                 return (this.totalPass / this.totalTest) * 100
             }
         }
+        
         // Call a method from an object
         console.log(reportData.passrate()); // 80
 ```
@@ -146,6 +147,7 @@
                 return (this.totalPass / this.totalTest) * 100
             }
         }
+
         // Call a method from an object
         console.log(reportData.passrate()); // 80
 ```
@@ -164,7 +166,8 @@
             return (this.totalPass / this.totalTest) * 100
         }
     }
+
     // Call a method from an object
-    console.log(reportData.passrate());
+    console.log(reportData.passrate()); // 80
 ```
 
