@@ -104,6 +104,19 @@
         error => console.error(error)
     );
 ```
+- Real time Use case:
+  - Run command: `npm install node-fetch`
+  - Import module: `import fetch from 'node-fetch';`
+
+```js
+    function getAPIRes() {
+        fetchUrl("https://api.github.com/users/github", (err, meta, body) => {
+            console.log(body.toString());
+        });
+    }
+
+    getAPIRes();
+```
 
 
 ### Promises:
@@ -180,6 +193,26 @@
             console.error("Error:", error);
         });
 ```
+- Real time Use case:
+  - Run command: `npm install node-fetch`
+  - Import module: `import fetch from 'node-fetch';`
+
+```js
+    function getAPIRes() {
+        fetch("https://api.github.com/users/github")
+            .then((res) => {
+                return res.json();
+            })
+            .then((updatedRes) => {
+                console.log(updatedRes);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    }
+
+    getAPIRes();
+```
 
 
 ### async/await:
@@ -255,6 +288,19 @@
     }
 
     fetchData();
+```
+- Real time Use case:
+  - Run command: `npm install node-fetch`
+  - Import module: `import fetch from 'node-fetch';`
+
+```js
+    async function getAPIRes() {
+        let response = await fetch("https://api.github.com/users/github")
+        let data = await response.json()
+        console.log(data);
+    }
+
+    getAPIRes();
 ```
 
 
