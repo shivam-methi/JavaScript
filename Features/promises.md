@@ -105,8 +105,9 @@
     );
 ```
 - Real time Use case:
-  - Run command: `npm install node-fetch`
-  - Import module: `import fetch from 'node-fetch';`
+  - Go to the URL: `https://www.npmjs.com/package/node-fetch`
+  - Run command: `npm install node-fetch@2`
+  - Import module: `const fetch = require("node-fetch");`
 
 ```js
     function getAPIRes() {
@@ -194,8 +195,9 @@
         });
 ```
 - Real time Use case:
-  - Run command: `npm install node-fetch`
-  - Import module: `import fetch from 'node-fetch';`
+  - Go to the URL: `https://www.npmjs.com/package/node-fetch`
+  - Run command: `npm install node-fetch@2`
+  - Import module: `const fetch = require("node-fetch");`
 
 ```js
     function getAPIRes() {
@@ -290,8 +292,9 @@
     fetchData();
 ```
 - Real time Use case:
-  - Run command: `npm install node-fetch`
-  - Import module: `import fetch from 'node-fetch';`
+  - Go to the URL: `https://www.npmjs.com/package/node-fetch`
+  - Run command: `npm install node-fetch@2`
+  - Import module: `const fetch = require("node-fetch");`
 
 ```js
     async function getAPIRes() {
