@@ -41,29 +41,68 @@
 - Solution is - Promises.
 
 ```js
-    function resolveAfter2Seconds(callback) {
+    // Scenario: 
+    // 1. fetchUserData(): Fetches user data from a server.
+    // 2. fetchPosts(userId): Fetches posts based on the user ID.
+    // 3. fetchComments(postId): Fetches comments based on the post ID.
+
+    // 1. fetchUserData():
+    function fetchUserData(callback, errorCallback) {
         setTimeout(() => {
-            callback(null, 'resolved');
-        }, 2000);
-    }
-
-    function asyncCall(callback) {
-        console.log('calling');
-        resolveAfter2Seconds((err, result) => {
-            if (err) {
-                callback(err);
+            const error = false; // Simulate an error
+            if (error) {
+                errorCallback("Failed to fetch user data");
             } else {
-                console.log(result);
-                callback(null, result);
+                console.log("Fetched user data");
+                callback({ userId: 1 });
             }
-        });
+        }, 1000);
     }
 
-    asyncCall((err, result) => {
-        if (err) {
-            console.error('Error:', err);
-        }
-    });
+    // 2. fetchPosts(userId):
+    function fetchPosts(userId, callback, errorCallback) {
+        setTimeout(() => {
+            if (!userId) {
+                errorCallback("Invalid user ID");
+            } else {
+                console.log(`Fetched posts for user ${userId}`);
+                callback([{ postId: 1 }]);
+            }
+        }, 1000);
+    }
+
+    // 3. fetchComments(postId):
+    function fetchComments(postId, callback, errorCallback) {
+        setTimeout(() => {
+            if (!postId) {
+                errorCallback("Invalid post ID");
+            } else {
+                console.log(`Fetched comments for post ${postId}`);
+                callback([{ commentId: 1 }]);
+            }
+        }, 1000);
+    }
+
+
+    // Using Callbacks with Error Handling
+    fetchUserData(
+        user => {
+            fetchPosts(
+                user.userId,
+                posts => {
+                    fetchComments(
+                        posts[0].postId,
+                        comments => {
+                            console.log("Comments:", comments);
+                        },
+                        error => console.error(error)
+                    );
+                },
+                error => console.error(error)
+            );
+        },
+        error => console.error(error)
+    );
 ```
 
 
@@ -81,52 +120,141 @@
     - .then(): to get resolved value(success)
     - .catch(): to get rejected value(failure)
 
-```js
-    function resolveAfter2Seconds() {
-        return new Promise((resolve) => {
+```js    
+    // Scenario: 
+    // 1. fetchUserData(): Fetches user data from a server.
+    // 2. fetchPosts(userId): Fetches posts based on the user ID.
+    // 3. fetchComments(postId): Fetches comments based on the post ID.
+
+    // 1. fetchUserData():
+    function fetchUserData() {
+        return new Promise((resolve, reject) => {
             setTimeout(() => {
-                resolve('resolved');
-            }, 2000);
+                const error = false; // Simulate an error
+                if (error) {
+                    reject("Failed to fetch user data");
+                } else {
+                    console.log("Fetched user data");
+                    resolve({ userId: 1 });
+                }
+            }, 1000);
         });
     }
 
-    function asyncCall() {
-        console.log('calling');
-        resolveAfter2Seconds()
-            .then((result) => {
-                console.log(result);
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
+    // 2. fetchPosts(userId):
+    function fetchPosts(userId) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (!userId) {
+                    reject("Invalid user ID");
+                } else {
+                    console.log(`Fetched posts for user ${userId}`);
+                    resolve([{ postId: 1 }]);
+                }
+            }, 1000);
+        });
     }
 
-    asyncCall();
+    // 3. fetchComments(postId):
+    function fetchComments(postId) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (!postId) {
+                    reject("Invalid post ID");
+                } else {
+                    console.log(`Fetched comments for post ${postId}`);
+                    resolve([{ commentId: 1 }]);
+                }
+            }, 1000);
+        });
+    }
+
+    // Using Promises with Error Handling
+    fetchUserData()
+        .then(user => fetchPosts(user.userId))
+        .then(posts => fetchComments(posts[0].postId))
+        .then(comments => {
+            console.log("Comments:", comments);
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
 ```
 
 
 ### Async await:
+- An Async function allows you to handle asynchronous code in a manner that appears synchronous.  
 - Async await is a special syntax to work with promises in a more comfortable way
 - syntex is easy to understand and use
-- async -> ensures that the function returns a promise , and wraps non-promises in it.
-- await -> makes JavaScript wait until that promise settles and returns its result.
+- async
+  - async is a function
+  - ensures that the function returns a promise , and wraps non-promises in it.
+- await
+  - await is an operator
+  - makes JavaScript wait until that promise settles(resolved/rejected) and returns its result.
 
-```js
-    function resolveAfter2Seconds() {
-        return new Promise((resolve) => {
+```js    
+    // Scenario: 
+    // 1. fetchUserData(): Fetches user data from a server.
+    // 2. fetchPosts(userId): Fetches posts based on the user ID.
+    // 3. fetchComments(postId): Fetches comments based on the post ID.
+
+    // 1. fetchUserData():
+    function fetchUserData() {
+        return new Promise((resolve, reject) => {
             setTimeout(() => {
-                resolve('resolved');
-            }, 2000);
+                const error = false; // Simulate an error
+                if (error) {
+                    reject("Failed to fetch user data");
+                } else {
+                    console.log("Fetched user data");
+                    resolve({ userId: 1 });
+                }
+            }, 1000);
         });
     }
 
-    async function asyncCall() {
-        console.log('calling');
-        const result = await resolveAfter2Seconds();
-        console.log(result);
+    // 2. fetchPosts(userId):
+    function fetchPosts(userId) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (!userId) {
+                    reject("Invalid user ID");
+                } else {
+                    console.log(`Fetched posts for user ${userId}`);
+                    resolve([{ postId: 1 }]);
+                }
+            }, 1000);
+        });
     }
 
-    asyncCall();
+    // 3. fetchComments(postId):
+    function fetchComments(postId) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (!postId) {
+                    reject("Invalid post ID");
+                } else {
+                    console.log(`Fetched comments for post ${postId}`);
+                    resolve([{ commentId: 1 }]);
+                }
+            }, 1000);
+        });
+    }
+
+    // Using async/await with Error Handling
+    async function fetchData() {
+        try {
+            const user = await fetchUserData();
+            const posts = await fetchPosts(user.userId);
+            const comments = await fetchComments(posts[0].postId);
+            console.log("Comments:", comments);
+        } catch (error) {
+            console.error("Error:", error);
+        }
+    }
+
+    fetchData();
 ```
 
 
@@ -139,3 +267,5 @@
 | Chaining      | Complex and can lead to callback hell      | Chained with multiple `.then()` calls| sequential flow with `await`                 |
 | Debugging     | Harder to debug                            | Easier than callbacks                | Easiest to debug due to synchronous structure|
 | Support       | Supported in all JavaScript environments   | ES6 and later                        | ES2017 and later                             |
+
+
