@@ -9,9 +9,9 @@
 - for…in loop can be iterate over an object.
 - All objects in JavaScript inherit from at least one other object. The object being inherited from is
   known as the prototype.
-- Use case: 
+- Use cases: 
   - To store test data (key: value) 
-  - - mainly for config (e.g env, url) 
+  - mainly for config (e.g env, url) 
   - storing creds (user, pass)
 - Ways to create Objects:  
   - Literals/Object initializer, constructor function, Object.Create(<prototype>).
@@ -20,7 +20,7 @@
 
 ### Creating an Object:
 
-### Object literals/initializer: 
+### Using Object literals/initializer: 
 
 ```js
     let obj = {
@@ -36,7 +36,7 @@
 ```
 
 
-### Constructor function: 
+### Using Constructor function: 
 
 ```js
     function Person(name, age, isMarried){
