@@ -100,8 +100,10 @@
 
 
     // Adding and Modifying Properties:
-    reportData.totalFail = 20;
-    console.log(reportData.totalFail); // 20
+    reportData.totalPass = 70;
+    reportData.totalFail = 30;
+    console.log(reportData.totalPass); // 70
+    console.log(reportData.totalFail); // 30
 
 
     // Deleting Properties:
