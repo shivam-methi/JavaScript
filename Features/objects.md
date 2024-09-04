@@ -114,8 +114,9 @@
 
 ### Methods in Objects:
 
+### Anonymous function with key:
+
 ```js
-    // 1. Anonymous function with key:
         let reportData = {
             testID: 12345,
             status: "PASS",
@@ -129,9 +130,11 @@
         }
         // Call a method from an object
         console.log(reportData.passrate()); // 80
+```
 
+### Arrow function with key:
 
-    // 2. Arrow function with key:
+```js
         let reportData = {
             testID: 12345,
             status: "PASS",
@@ -145,9 +148,11 @@
         }
         // Call a method from an object
         console.log(reportData.passrate()); // 80
+```
 
+### method without a key:
 
-    // 3. method without a key:
+```js
     let reportData = {
         testID: 12345,
         status: "PASS",
