@@ -34,7 +34,7 @@
 ```
 
 
-### Callback:
+### Callbacks:
 - When we pass a function in another fuction as function argument or parameter.
 - Nesting of callback functions are call/create callback hell.
 - Hard to read & understand the code.
@@ -182,7 +182,7 @@
 ```
 
 
-### Async await:
+### async/await:
 - An Async function allows you to handle asynchronous code in a manner that appears synchronous.  
 - Async await is a special syntax to work with promises in a more comfortable way
 - syntex is easy to understand and use
