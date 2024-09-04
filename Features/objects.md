@@ -75,3 +75,38 @@
     console.log(typeof obj1); // type checking of an object
 ```
 
+
+### Accessing Properties:
+- You can access properties of an object using either dot notation or bracket notation.
+- You can add or modify properties by simply assigning a value to a key.
+- You can delete a property from an object using the 'delete' keyword.
+
+```js
+    let reportData = {
+        testID: 12345,
+        status: "PASS",
+        "PASS/FAIL Flag": "PASS",
+        totalTest: 100, 
+        totalPass: 80,
+        isInScope: true
+    }
+
+    // Access property using Dot Notation:
+    console.log(reportData.testID); // 12345
+
+
+    // Access property using Bracket Notation:
+    console.log(reportData["PASS/FAIL Flag"]); // PASS
+
+
+    // Adding and Modifying Properties:
+    reportData.totalFail = 20;
+    console.log(reportData.totalFail); // 20
+
+
+    // Deleting Properties:
+    delete reportData.totalFail;
+    console.log(reportData.totalFail); // undefined - deleted
+```
+
+
