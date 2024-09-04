@@ -84,7 +84,7 @@
     }
 
 
-    // Using Callbacks with Error Handling
+    // Using Callbacks with Error Handling:
     fetchUserData(
         user => {
             fetchPosts(
@@ -169,7 +169,7 @@
         });
     }
 
-    // Using Promises with Error Handling
+    // Using Promises with Error Handling:
     fetchUserData()
         .then(user => fetchPosts(user.userId))
         .then(posts => fetchComments(posts[0].postId))
@@ -242,7 +242,7 @@
         });
     }
 
-    // Using async/await with Error Handling
+    // Using async/await with Error Handling:
     async function fetchData() {
         try {
             const user = await fetchUserData();
