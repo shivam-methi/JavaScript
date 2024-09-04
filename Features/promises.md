@@ -105,9 +105,9 @@
     );
 ```
 - Real time Use case:
-  - Go to the URL: `https://www.npmjs.com/package/node-fetch`
-  - Run command: `npm install node-fetch@2`
-  - Import module: `const fetch = require("node-fetch");`
+  - Go to the URL: `https://www.npmjs.com/package/fetch`
+  - Run command: `npm install fetch`
+  - Import module: `const fetchUrl = require("fetch").fetchUrl;`
 
 ```js
     function getAPIRes() {
