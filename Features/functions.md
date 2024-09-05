@@ -9,7 +9,6 @@
     - Anonymous function (aka function expression)
         - Callback function
         - arrow function
-![alt text](<../Others/function definition.png>)
 
 
 ### Named Function / Function Declaration:
