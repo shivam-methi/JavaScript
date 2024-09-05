@@ -253,4 +253,34 @@
 ```
 
 
-### 
+### Merging Objects:
+
+```js
+    let obj1 = {
+        a: 1,
+        b: 2,
+        c: 3,
+    };
+
+    let obj2 = {
+        c: 4,
+        d: 5,
+        e: 6,
+    };
+
+    // Merging objects:
+
+    // Using Object.assign():
+    let obj = Object.assign(obj1, obj2)
+    console.log(obj);                       // output: { a: 1, b: 2, c: 4, d: 5, e: 6 }
+
+
+    // Using the spread operator:
+    let obj = {
+        ...obj1,
+        ...obj2
+    }
+    console.log(obj);                       // output: { a: 1, b: 2, c: 4, d: 5, e: 6 }
+```
+
+
