@@ -289,7 +289,6 @@ console.log(arr["3"]);       // same way as above  - output: 4
     ];
 
     // Get only the prices values
-
     let priceArr = []
     for (let i = 0; i < book.length; i++) {
         let price = book[i].price
