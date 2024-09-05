@@ -171,3 +171,67 @@
     console.log(reportData.passrate()); // 80
 ```
 
+
+### Dynamic Key and Value: 
+
+### Dynamic `Value`:
+
+```js
+    
+    // Create Dynamic Values:
+    let testRunner = "local"
+    let machineID = "44d6dhh7999d"
+    let envFile = "test_config"
+
+    let reportData = {
+    testID: 12345,
+    status: "PASS",
+    "PASS/FAIL Flag": "PASS",
+    totalTest: 100,
+    totalPass: 80,
+    isInScope: true,
+    passrate() {
+        return (this.totalPass / this.totalTest) * 100;
+    },
+    runDt: new Date(),                            // Assign a function
+    runner: testRunner,                           // Assign a variable
+    macID: machineID ? machineID : "Unknown",     // Assign a expression 
+    };
+
+    // Access the data:
+    console.log(reportData);                    // complete object
+    console.log(reportData.runDt);              // 2024-09-05T07:30:20.579Z
+    console.log(reportData.runner);             // local
+    console.log(reportData.macID);              // Unknown
+```
+
+
+### Dynamic `Key`:
+
+```js
+
+    // Create Dynamic keys:
+    let testRunner = "local"
+    let machineID = "44d6dhh7999d"
+    let envFile = "test_config"
+
+    let reportData = {
+    testID: 12345,
+    status: "PASS",
+    "PASS/FAIL Flag": "PASS",
+    totalTest: 100,
+    totalPass: 80,
+    isInScope: true,
+    passrate() {
+        return (this.totalPass / this.totalTest) * 100;
+    },
+    [envFile] :{
+      env: "test",
+      url : "http://test.com"
+     }
+    };
+
+    // Access the data:
+    console.log(reportData);                    // complete object
+    console.log(reportData.test_config);        // { env: 'test', url: 'http://test.com' }
+```
