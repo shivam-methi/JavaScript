@@ -226,4 +226,31 @@
 ```
 
 
+### Object Assignment: 
+
+```js
+    let reportData = {
+        status: "PASS",
+        scope: ["smoke", "reg", "e2e"],
+        previousRun: {
+            status: "FAIL",
+            runID: 6789,
+        },
+    };
+
+    // Assignment - Top level property 
+    reportData.status = "FAIL";             // value will be updated
+
+
+    // Assignment - Inner level property 
+    reportData.previousRun.status = "PASS"; // value will be updated
+
+
+    // Assignment to other object
+    let obj = {}
+    obj = reportData;
+    console.log(obj);                       // Output will be the same as reportData object
+```
+
+
 ### 
