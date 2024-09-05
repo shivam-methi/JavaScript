@@ -16,4 +16,3 @@
     const closureExample = outerFunction();
     closureExample(); // Output: "I am from outerFunction"
 ```
-

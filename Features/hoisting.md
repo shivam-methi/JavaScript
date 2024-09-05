@@ -7,29 +7,31 @@
 - javascript only hoists declaration not initilzation 
 - variable will be the undefined until the line where it's initlized is reached
 
+### with `var`:
 ```js
-  console.log(a); // undefined - following line will be exectued successfully due to JS hoisting 
-  var a = 9;      // Declaration hoisted to the top but initialzation not
-  console.log(a);
+  console.log(a);     // undefined - following line will be exectued successfully due to JS hoisting 
+  var a = 9;          // Declaration hoisted to the top but initialzation not
+  console.log(a);     // Output: 9
 ```
 
-
+### with `const` and `let`:
 - Hoisiting is different with let and const 
 - Variables declared with let and const are also hoisted, 
   but they are not initialized until the execution reaches the line where they are defined
 - Cannot access 'a' before initialization
-*/
 
 ```js
+  // let
   console.log(a);     // Cannot access 'a' before initialization
   let a = 9;
-  console.log(a);
+  console.log(a);     // 9
 ```
 
 ```js
+  // const
   console.log(a);     // Cannot access 'a' before initialization
   const a = 9;
-  console.log(a);
+  console.log(a);     // 9
 ```
 
 
@@ -44,6 +46,7 @@
       console.log("Good morning");
   }
 ```
+
 
 ### Arrow functions:
 - arrow functions are treated like variable assignments and are not hoisted in the same way
@@ -66,11 +69,12 @@
    even if they haven't been initialized yet.
 
 
+
 ### Disadvantages:
 - Although variable declarations are hoisted, their assignments or initialisation are not. 
-  If you try to access a variable before it is assigned a value, it will have the value undefined, 
+- If you try to access a variable before it is assigned a value, it will have the value undefined, 
   which can lead to unexpected behaviour.
 - hoisting can lead to subtle bugs in your code. 
-  For example, if you have multiple variables with the same name declared in different scopes, 
+- For example, if you have multiple variables with the same name declared in different scopes, 
   the hoisting behaviour can cause unexpected results when accessing those variables.
 
