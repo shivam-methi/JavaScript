@@ -11,17 +11,17 @@
 ```js
 let arr = [1, 2, 3];
 
-console.log(arr.push(4));    // Adding a value in the index
+console.log(arr.push(4));    // Adding a element in the index
 console.log(arr);            // Mutable
 
-console.log(arr[3]);         // New value get added - output: 4
+console.log(arr[3]);         // New element get added - output: 4
 console.log(arr["3"]);       // same way as above  - output: 4
 ```
 
 
 ### Creating Arrays: 
 
-### Using Literals (most commonly used): 
+### Using Literals: 
 
 ```js
     let arr = ["apple", "orange", "banana"]
@@ -55,4 +55,28 @@ console.log(arr["3"]);       // same way as above  - output: 4
     console.log(`Single ele: ${arr[1]}`);       // Single ele: orange
     console.log(typeof arr); // Object          // object
     console.log(arr.constructor);               // [Function: Array]
+```
+
+###  Accessing Elements:
+
+```js
+    let arr = ["apple", "orange", "banana"]
+
+    // Accessing Elements:
+    console.log(fruits[0]);     // Using Index   - Output: apple
+    console.log(arr["0"]);      // Using bracket - Output: apple
+
+
+    // Adding elements :
+    arr[3] = "mango";   // Using Assignment operator
+    arr.push("kiwi");   // Using .push() method
+
+
+    // Modifying elements:
+    arr[1] = "blackberry";  // Changes orange to blackberry
+
+    
+    // Results:
+    console.log(arr);                               // [ 'apple', 'blackberry', 'banana', 'mango', 'kiwi' ]
+    console.log(`Total elements: ${arr.length}`);   // Total elements: 5
 ```

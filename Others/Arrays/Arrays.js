@@ -1,12 +1,6 @@
 /* 
 
-1. Use to store more than 1 value
-2. Can store different types of data types values
-3. Index starts from 0 
-4. Arrays are mutable - arrays can be changed - we can add values in array, update values 
-5. Default type of array - Object 
-6. Array loops - for, forEach, for..Of, for..in
-7. Array.from - use to create an array from any other object
+
 8. Map - create a new array by performing some operations on each array elements, do not modify original array
 9. Filter - filter an array with values that values that passes a test & create new array, do not modify original array
 10. Reduce - reduces an array to a single value
