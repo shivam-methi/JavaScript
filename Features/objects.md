@@ -205,12 +205,12 @@
 
 
     // Access object keys:
-    let keys = Object.keys(reportData)
+    let keys = Object.keys(reportData);
     console.log(keys);
 
 
     // Access object values:
-    let values = Object.values(reportData)
+    let values = Object.values(reportData);
     console.log(values);
 
 
