@@ -231,3 +231,72 @@ console.log(arr["3"]);       // same way as above  - output: 4
     console.log(arr);                               // [ [ 1, 2, 3 ], [ 'one', 'two', 'three' ] ]
     console.log(`Total elements: ${arr.length}`);   // Total elements: 2
 ```
+
+
+### Traversal and accessing elements: 
+- Use [] to access an array's elements
+- Use dot (.) operator for object 
+
+```js
+    // Access an inner object property:
+    let arr = [
+        {
+            name: "Rob",
+            age: 25,
+        },
+        {
+            name: "Bob",
+            age: 30,
+        },
+    ];
+
+    // Results:
+    console.log(arr[1]);     // prints the second obj
+    console.log(arr[1].age); // 30
+
+
+    // Acceess an inner array elements:
+    let arr = [
+        [1, 2, 3],
+        ["one", "two", "three"],
+    ];
+
+    // Results:
+    console.log(arr[1][2]);  // three
+
+
+    // Access elements across different objects (by finding the path):
+    let book = [
+        {
+            category: "reference",
+            author: "Nigel Rees",
+            title: "Sayings of the Century",
+            price: 8.95,
+        },
+        {
+            category: "fiction",
+            author: "Evelyn Waugh",
+            title: "Sword of Honour",
+            price: 12.99,
+        },
+        {
+            category: "fiction",
+            author: "Herman Melville",
+            title: "Moby Dick",
+            isbn: "0-553-21311-3",
+            price: 8.99,
+        },
+    ];
+
+    // Get only the prices values
+
+    let priceArr = []
+    for (let i = 0; i < book.length; i++) {
+        let price = book[i].price
+        priceArr.push(price)
+    }
+
+    // Results:
+    console.log(priceArr);  // [ 8.95, 12.99, 8.99 ]
+```
+
