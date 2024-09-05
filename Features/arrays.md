@@ -86,7 +86,7 @@ console.log(arr["3"]);       // same way as above  - output: 4
 
 ### Length Property:
 - The `length` property returns the number of elements in the array.
-- length property returns total index + 1. This does not mean there are that many elements in that object.
+- length property returns total index + 1.(This does not mean there are that many elements in that object).
 - length property can be set manually.
 
 ```js
@@ -182,4 +182,52 @@ console.log(arr["3"]);       // same way as above  - output: 4
      let numbers = [1, 2, 3];
     let sum = numbers.reduce((acc, val) => acc + val, 0);  // Reduces the array to a single value
     console.log(sum);                                      // Output: 6
+```
+
+
+### Different data structure:
+
+```js
+    // Same type of data:
+    let arr = ["apple", "orange", "banana"];
+
+    // Results:
+    console.log(arr);                               // [ 'apple', 'orange', 'banana' ]
+    console.log(`Total elements: ${arr.length}`);   // Total elements: 3
+
+
+    // Different type of data:
+    let arr = [1, "two", true]
+
+    // Results:
+    console.log(arr);                               // [ 1, 'two', true ]
+    console.log(`Total elements: ${arr.length}`);   // Total elements: 3
+
+
+    // Array containing an object:
+    let arr = [
+    {
+        name: "Rob",
+        age: 25,
+    },
+    {
+        name: "Bob",
+        age: 30,
+    },
+    ];
+
+    // Results:
+    console.log(arr);                               // [ { name: 'Rob', age: 25 }, { name: 'Bob', age: 30 } ]
+    console.log(`Total elements: ${arr.length}`);   // Total elements: 2
+
+
+    // Array containing an array:
+    let arr = [
+    [1, 2, 3],
+    ["one", "two", "three"],
+    ];
+
+    // Results:
+    console.log(arr);                               // [ [ 1, 2, 3 ], [ 'one', 'two', 'three' ] ]
+    console.log(`Total elements: ${arr.length}`);   // Total elements: 2
 ```
