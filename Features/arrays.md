@@ -206,14 +206,14 @@ console.log(arr["3"]);       // same way as above  - output: 4
 
     // Array containing an object:
     let arr = [
-    {
-        name: "Rob",
-        age: 25,
-    },
-    {
-        name: "Bob",
-        age: 30,
-    },
+        {
+            name: "Rob",
+            age: 25,
+        },
+        {
+            name: "Bob",
+            age: 30,
+        },
     ];
 
     // Results:
@@ -223,8 +223,8 @@ console.log(arr["3"]);       // same way as above  - output: 4
 
     // Array containing an array:
     let arr = [
-    [1, 2, 3],
-    ["one", "two", "three"],
+        [1, 2, 3],
+        ["one", "two", "three"],
     ];
 
     // Results:
