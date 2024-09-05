@@ -4,6 +4,7 @@
 - The `value` can be anything, including other objects, arrays, functions, or primitives like strings, numbers, 
   or booleans.
 - it's One of the data types.
+- Objects are Unordered named collections (key: value) pair (means no index).
 - Object is mutable (Any changes to the original Object will be reflected elsewhere).
 - The literals form of an object is denoted by {}.
 - for…in loop can be iterate over an object.
