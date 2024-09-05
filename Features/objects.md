@@ -203,13 +203,6 @@
         }
     };
 
-    // Access the data:
-    console.log(reportData);                          // complete object
-    console.log(reportData.test_config);              // { env: 'test', url: 'http://test.com' }
-    console.log(reportData.runDt);                    // 2024-09-05T07:30:20.579Z
-    console.log(reportData.runner);                   // local
-    console.log(reportData.macID);                    // 44d6dhh7999d
-
 
     // Access object keys:
     let keys = Object.keys(reportData)
@@ -221,6 +214,12 @@
     console.log(values);
 
 
+    // Access the data:
+    console.log(reportData);                          // complete object
+    console.log(reportData.test_config);              // { env: 'test', url: 'http://test.com' }
+    console.log(reportData.runDt);                    // 2024-09-05T07:30:20.579Z
+    console.log(reportData.runner);                   // local
+    console.log(reportData.macID);                    // 44d6dhh7999d
     console.log(reportData.scope[1]);                  // reg
     console.log(reportData.previousRun.status);        // FAIL
     console.log(reportData["previousRun"]["status"]);  // FAIL
