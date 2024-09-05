@@ -271,7 +271,7 @@
     // Merging objects:
 
     // Using Object.assign():
-    let obj = Object.assign(obj1, obj2)
+    let obj = Object.assign(obj1, obj2);
     console.log(obj);                       // output: { a: 1, b: 2, c: 4, d: 5, e: 6 }
 
 
@@ -284,3 +284,4 @@
 ```
 
 
+### 
