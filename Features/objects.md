@@ -124,7 +124,7 @@
             totalTest: 100,
             totalPass: 80,
             isInScope: true,
-            passrate: function () {
+            passrate: function () {     // Anonymous function with key
                 return (this.totalPass / this.totalTest) * 100
             }
         }
@@ -143,7 +143,7 @@
             totalTest: 100,
             totalPass: 80,
             isInScope: true,
-            passrate: () => {
+            passrate: () => {           // Arrow function with key
                 return (this.totalPass / this.totalTest) * 100
             }
         }
@@ -162,7 +162,7 @@
         totalTest: 100,
         totalPass: 80,
         isInScope: true,
-        passrate() {
+        passrate() {                    // method without a key
             return (this.totalPass / this.totalTest) * 100
         }
     }
@@ -174,64 +174,57 @@
 
 ### Dynamic Key and Value: 
 
-### Dynamic `Value`:
-
 ```js
-    
-    // Create Dynamic Values:
-    let testRunner = "local"
-    let machineID = "44d6dhh7999d"
-    let envFile = "test_config"
+    let testRunner = "local";
+    let machineID = "44d6dhh7999d";
+    let envFile = "test_config";
 
     let reportData = {
-    testID: 12345,
-    status: "PASS",
-    "PASS/FAIL Flag": "PASS",
-    totalTest: 100,
-    totalPass: 80,
-    isInScope: true,
-    passrate() {
-        return (this.totalPass / this.totalTest) * 100;
-    },
-    runDt: new Date(),                            // Assign a function
-    runner: testRunner,                           // Assign a variable
-    macID: machineID ? machineID : "Unknown",     // Assign a expression 
-    };
-
-    // Access the data:
-    console.log(reportData);                    // complete object
-    console.log(reportData.runDt);              // 2024-09-05T07:30:20.579Z
-    console.log(reportData.runner);             // local
-    console.log(reportData.macID);              // Unknown
-```
-
-
-### Dynamic `Key`:
-
-```js
-
-    // Create Dynamic keys:
-    let testRunner = "local"
-    let machineID = "44d6dhh7999d"
-    let envFile = "test_config"
-
-    let reportData = {
-    testID: 12345,
-    status: "PASS",
-    "PASS/FAIL Flag": "PASS",
-    totalTest: 100,
-    totalPass: 80,
-    isInScope: true,
-    passrate() {
-        return (this.totalPass / this.totalTest) * 100;
-    },
-    [envFile] :{
-      env: "test",
-      url : "http://test.com"
-     }
+        testID: 12345,
+        status: "PASS",
+        "PASS/FAIL Flag": "PASS",
+        totalTest: 100,
+        totalPass: 80,
+        isInScope: true,
+        passrate() {
+            return (this.totalPass / this.totalTest) * 100;
+        },
+        runDt: new Date(),                            // value - Assign a function
+        runner: testRunner,                           // value - Assign a variable
+        macID: machineID ? machineID : "Unknown",     // value - Assign a expression 
+        [envFile]: {
+            env: "test",                                // key - create a dynamic key
+            url: "http://test.com",
+        },
+        scope: ["smoke", "reg", "e2e"],
+        previousRun: {
+            status: "FAIL",
+            runID: 6789
+        }
     };
 
     // Access the data:
     console.log(reportData);                    // complete object
     console.log(reportData.test_config);        // { env: 'test', url: 'http://test.com' }
+    console.log(reportData.runDt);              // 2024-09-05T07:30:20.579Z
+    console.log(reportData.runner);             // local
+    console.log(reportData.macID);              // 44d6dhh7999d
+
+
+    // Access object keys:
+    let keys = Object.keys(reportData)
+    console.log(keys);
+
+
+    // Access object values:
+    let values = Object.values(reportData)
+    console.log(values);
+
+
+    console.log(reportData.scope[1]);                       // reg
+    console.log(reportData.previousRun.status);             // FAIL
+    console.log(reportData["previousRun"]["status"]);       // FAIL
 ```
+
+
+### 
