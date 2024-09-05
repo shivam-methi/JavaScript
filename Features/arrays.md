@@ -158,6 +158,7 @@ console.log(arr["3"]);       // same way as above  - output: 4
 
 ### map() Method: 
 - Creates a new array with the results of calling a function on every element.
+- do not modify original array.
 
 ```js
     let numbers = [1, 2, 3];
@@ -168,6 +169,7 @@ console.log(arr["3"]);       // same way as above  - output: 4
 
 ### filter() Method: 
 - Creates a new array with elements that pass a test function.
+- do not modify original array.
 
 ```js
     let numbers = [1, 2, 3];
