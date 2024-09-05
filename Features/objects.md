@@ -193,7 +193,7 @@
         runner: testRunner,                           // value - Assign a variable
         macID: machineID ? machineID : "Unknown",     // value - Assign a expression 
         [envFile]: {
-            env: "test",                                // key - create a dynamic key
+            env: "test",                              // key - create a dynamic key
             url: "http://test.com",
         },
         scope: ["smoke", "reg", "e2e"],
@@ -204,11 +204,11 @@
     };
 
     // Access the data:
-    console.log(reportData);                    // complete object
-    console.log(reportData.test_config);        // { env: 'test', url: 'http://test.com' }
-    console.log(reportData.runDt);              // 2024-09-05T07:30:20.579Z
-    console.log(reportData.runner);             // local
-    console.log(reportData.macID);              // 44d6dhh7999d
+    console.log(reportData);                          // complete object
+    console.log(reportData.test_config);              // { env: 'test', url: 'http://test.com' }
+    console.log(reportData.runDt);                    // 2024-09-05T07:30:20.579Z
+    console.log(reportData.runner);                   // local
+    console.log(reportData.macID);                    // 44d6dhh7999d
 
 
     // Access object keys:
@@ -221,9 +221,9 @@
     console.log(values);
 
 
-    console.log(reportData.scope[1]);                       // reg
-    console.log(reportData.previousRun.status);             // FAIL
-    console.log(reportData["previousRun"]["status"]);       // FAIL
+    console.log(reportData.scope[1]);                  // reg
+    console.log(reportData.previousRun.status);        // FAIL
+    console.log(reportData["previousRun"]["status"]);  // FAIL
 ```
 
 
