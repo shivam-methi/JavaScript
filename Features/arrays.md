@@ -14,14 +14,45 @@ let arr = [1, 2, 3];
 console.log(arr.push(4));    // Adding a value in the index
 console.log(arr);            // Mutable
 
-console.log(arr[3]);         // 4
-console.log(arr["3"]);       // 4
+console.log(arr[3]);         // New value get added - output: 4
+console.log(arr["3"]);       // same way as above  - output: 4
 ```
 
 
+### Creating Arrays: 
 
-1. Map - create a new array by performing some operations on each array elements, do not modify original array
-2. Filter - filter an array with values that values that passes a test & create new array, do not modify original array
-3.  Reduce - reduces an array to a single value
-4.  Array methods - typeOf, Length, toString, Join, Pop, Shift, Unsfhit, Delete, Concat, Sort-Compare, Reverse, Slice, Splice
+### Using Literals (most commonly used): 
 
+```js
+    let arr = ["apple", "orange", "banana"]
+
+    // Results: 
+    console.log(arr);                           // prints complete array
+    console.log(`Single ele: ${arr[1]}`);       // Single ele: orange
+    console.log(typeof arr); // Object          // object
+    console.log(arr.constructor);               // [Function: Array]
+```
+
+### Using Constructor function:
+
+```js    
+    let arr = Array("apple", "orange", "banana")
+
+    // Results: 
+    console.log(arr);                           // prints complete array
+    console.log(`Single ele: ${arr[1]}`);       // Single ele: orange
+    console.log(typeof arr); // Object          // object
+    console.log(arr.constructor);               // [Function: Array]
+```
+
+### Object creation using new keyword:
+
+```js
+    let arr = new Array("apple", "orange", "banana")
+
+    // Results: 
+    console.log(arr);                           // prints complete array
+    console.log(`Single ele: ${arr[1]}`);       // Single ele: orange
+    console.log(typeof arr); // Object          // object
+    console.log(arr.constructor);               // [Function: Array]
+```
