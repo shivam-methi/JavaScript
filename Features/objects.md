@@ -322,8 +322,8 @@
         console.log(`The key: ${key}, and the val: ${JSON.stringify(reportData[key])}`);
     }
 
-    //Output:
+    // Output:
     // The key: testID, and the val: 12345
     // The key: status, and the val: "PASS"
-    // .......all the keys and values
+    // .......same for all the keys and values
 ```
