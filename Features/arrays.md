@@ -299,3 +299,18 @@ console.log(arr["3"]);       // same way as above  - output: 4
     console.log(priceArr);  // [ 8.95, 12.99, 8.99 ]
 ```
 
+
+### Merge Arrays:
+
+```js
+    // Merge array using of spread operator:
+    let arr1 = ["apple", "orange", "banana"];
+    let arr2 = ["chocolate", "biscuit", "cake"];
+    
+    let arr = [...arr1, ...arr2];
+
+    // Results:
+    console.log(arr);          // [ 'apple', 'orange', 'banana', 'chocolate', 'biscuit', 'cake' ]
+    console.log(arr.length);   // 6
+```
+
