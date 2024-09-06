@@ -317,4 +317,3 @@
 | Debugging     | Harder to debug                            | Easier than callbacks                | Easiest to debug due to synchronous structure|
 | Support       | Supported in all JavaScript environments   | ES6 and later                        | ES2017 and later                             |
 
-

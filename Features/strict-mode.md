@@ -30,9 +30,9 @@
 ```
 
 ### Benefits and Features of Strict Mode:
-- Eliminates Some JavaScript Silent Errors: assigning a value to an undeclared variable
-- Disallows Duplicates: cannot have duplicate parameter names in functions
-- Prevents Deletion of Plain Names: cannot delete variables, functions, or function arguments
+- Eliminates Some JavaScript Silent Errors: assigning a value to an undeclared variable.
+- Disallows Duplicates: cannot have duplicate parameter names in functions.
+- Prevents Deletion of Plain Names: cannot delete variables, functions, or function arguments.
 - Disallows `this` Keyword for Global Objects: `this` inside functions that are not methods remains `undefined` 
-  rather than referring to the global object
+  rather than referring to the global object.
 

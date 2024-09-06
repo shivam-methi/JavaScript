@@ -229,3 +229,4 @@
 | Comparison   |               -               | Checks if values are equal    | Checks if values & types are equal |
 | Example      | let x = 5;                    | 5 == "5" //number == number   | 5 === "5" //number === string      |
 | Result       | x is now 5                    | true                          | false                              |
+

@@ -145,4 +145,3 @@ console.log(err2);  // ERROR! Error: Created via the new keyword!
     //   ERROR!
     //   Caught an error: Number must be non-negative
 ```
-

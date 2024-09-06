@@ -282,4 +282,3 @@ let repeatedStr = str.repeat(3); // "HelloHelloHello"
 
     let str = "Hello\rWorld"; // Depending on the environment, it may overwrite "Hello" with "World"
 ```
-

@@ -315,4 +315,3 @@ console.log(arr["3"]);       // same way as above  - output: 4
     console.log(arr);          // [ 'apple', 'orange', 'banana', 'chocolate', 'biscuit', 'cake' ]
     console.log(arr.length);   // 6
 ```
-
