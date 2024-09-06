@@ -1,4 +1,4 @@
-## Constructor;
+## Constructor:
 - a constructor is a special function used to create and initialize objects. 
 - When you use the `new` keyword with a constructor function, it creates a new instance of an object 
   and initializes it with properties and methods defined in the constructor. 
