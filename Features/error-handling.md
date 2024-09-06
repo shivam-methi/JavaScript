@@ -123,6 +123,11 @@ console.log(err2);  // ERROR! Error: Created via the new keyword!
    to the nearest catch block, if one exists.
 
 ```js
+    // Syntax:
+    throw expression;
+
+
+    // Example:
     function checkNumber(num) {
         if (num < 0) {
         throw new Error("Number must be non-negative");
