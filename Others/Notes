@@ -1,8 +1,0 @@
-Constructor Functions::
-1. 'new' keyword
-2. it allows to create multiple instances from a object litterals 
-
-'New' keyword::
-1. on using, an empty object creates(instance)
-2. constructor function calls due to new keyword 
-3. 
