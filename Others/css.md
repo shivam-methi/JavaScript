@@ -97,6 +97,7 @@
 ```
 
 
+
 ### Advantages of CSS Selectors over XPath:
 - CSS Selectors are faster in comparison with XPath.
 - These selectors are more readable and easier to learn.
@@ -112,3 +113,4 @@
 - If the application doesn’t include the attributes for the element in the DOM tree, writing a CSS selector will 
   be difficult, and it may become unreliable.
 - You cannot construct the selectors based on visible text.
+

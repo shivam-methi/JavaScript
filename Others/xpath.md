@@ -154,11 +154,21 @@
 ```
 
 
+
 ### Advantages of XPath:
-- XPath supports all major test automation libraries and programming languages
-- It provides bidirectional flow which means traversal can be both ways
+- XPath supports all major test automation libraries and programming languages.
+- It provides bidirectional flow which means traversal can be both ways.
 - Supports both XML and HTML documents.
-- XPath expression works at any document level, with no restriction to start the traversal at a specific level
-- XPath selector is compatible with old-age browsers as well as modern browsers
+- XPath expression works at any document level, with no restriction to start the traversal at a specific level.
+- XPath selector is compatible with old-age browsers as well as modern browsers.
 - XPath locator provides Axes and methods. You can use them in XPath expression to solve complex locator problems.
+
+
+### Disadvantages of XPath:
+- The performance of the XPath varies from application to application. XPath locators are comparatively slow, 
+  which can affect the overall performance of the test suite.
+- XPath is associated with more than one element in the DOM tree, and it tends to break as and when new 
+  element-level changes are introduced.
+- Usage of indexes (specific nodes with numbers) within the XPath causes high maintenance (Ex: //div[1]).
+- If XPath gets complicated more it becomes untidy and readability decreases.
 
