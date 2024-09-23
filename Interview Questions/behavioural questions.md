@@ -34,3 +34,20 @@
 - Furthermore, I have a proactive mindset. I enjoy working closely with developers, product managers, and 
   other stakeholders to ensure that quality is embedded throughout the entire software development lifecycle. 
 - I’m excited about the opportunity to contribute to your team’s success and help enhance the quality of your product.
+
+
+### Q: what do you think makes team successful?
+- I believe a successful team is built on a foundation of clear communication, collaboration, and shared goals. 
+- For a QA team, this means working closely with developers, product managers, and other stakeholders to ensure 
+  everyone is aligned on the product’s requirements and quality expectations.
+- Open communication is crucial for identifying potential issues early and ensuring that feedback is given in a 
+  timely manner. 
+- Collaboration is also key— QA should not operate in isolation. Instead, working as a part of a cross-functional team 
+  ensures that quality is integrated throughout the entire development lifecycle.
+- Additionally, a successful team embraces a continuous improvement mindset. This means being open to feedback, 
+  learning from mistakes, and always looking for ways to improve processes — whether that’s through automation, 
+  better test strategies, or enhancing workflows. 
+- Finally, mutual respect and trust within the team are essential for fostering creativity, problem-solving, 
+  and efficiency.
+- When everyone is aligned, shares the same vision, and feels empowered to contribute, the team can deliver 
+  high-quality products while maintaining strong working relationships."
