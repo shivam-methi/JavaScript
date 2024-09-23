@@ -17,11 +17,11 @@
 
 
 ### basic:  
-``js
+```
     //tagname[@Attribute=’Value’]
     //input[@name="customerName"]
     //input[@id="ap_customer_name"]
-``
+```
 
 ### starts-with:  
     //tagname[starts-with(@Attribute, ’Value’)]
