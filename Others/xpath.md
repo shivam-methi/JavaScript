@@ -21,6 +21,8 @@
 - Ex: //input[@name="customerName"]
 
 
+### Types of Xpath:
+
 ### basic:  
 ```
     //tagname[@Attribute=’Value’]

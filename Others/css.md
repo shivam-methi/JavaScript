@@ -5,6 +5,8 @@
 - It also helps to find the elements on the webpage uniquely.
 
 
+### Types of CSS:
+
 ### with id:
 ```
     #username
