@@ -90,7 +90,6 @@
 ```
     //tagname[@Attribute=’Value’]//descendant::tagname
     //div[@class="container"]//descendant::div
-    //*[@class="container"]//descendant-or-self::div
     (//*[@class="container"]//descendant::div[@class="row"])[1]
 ```
 
@@ -121,8 +120,6 @@
 ### following:  
 ```
     //tagname[@Attribute=’Value’]//follwing::tagname
-    //option[@value="pt_BR"]//following::option
-    //option[@value="1-5"]//following::option
     //option[@value="plan_to_use"]//following::option
 ```
 
@@ -130,8 +127,6 @@
 ### following-sibling:  
 ```
     //tagname[@Attribute=’Value’]//following-sibling::tagname
-    //option[@value="pt_BR"]//following-sibling::option
-    //option[@value="1-5"]//following-sibling::option
     //option[@value="plan_to_use"]//following-sibling::option
 ```
 
@@ -139,8 +134,6 @@
 ### preceding:  
 ```
     //tagname[@Attribute=’Value’]//follwing::tagname
-    //option[@value="pt_BR"]//preceding::option
-    //option[@value="1-5"]//preceding::option
     //option[@value="plan_to_use"]//preceding::option
 ```
 
@@ -148,8 +141,6 @@
 ### preceding-sibling: 
 ``` 
     //tagname[@Attribute=’Value’]//preceding-sibling::tagname
-    //option[@value="pt_BR"]//preceding-sibling::option
-    //option[@value="1-5"]//preceding-sibling::option
     //option[@value="plan_to_use"]//preceding-sibling::option
 ```
 
