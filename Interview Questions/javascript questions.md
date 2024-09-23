@@ -2,8 +2,8 @@
 
 ### Q: how do you utilize js in automation?
 - JavaScript plays a crucial role in my test automation strategy, especially when working with tools and frameworks
-  designed for web applications. 
-- JavaScript allows me to create robust, scalable, and maintainable test automation scripts. 
+  designed for web applications.
+- JavaScript allows me to create robust, scalable, and maintainable test automation scripts.
 - Its flexibility, along with the power of modern testing frameworks, helps me ensure comprehensive testing for 
   web applications, APIs, and UI elements.
 - Here’s how I utilize JavaScript in automation:
