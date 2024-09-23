@@ -1,5 +1,5 @@
 ## Introduction:
-- Good morning, I have over 5 years of experience in IT, primarily in the testing field.
+- Good Afternoon, I have over 5 years of experience in IT, primarily in the testing field.
 - Currently, I’m working for Political Data, based in Bangalore, where my project is OutreachCircle – a Relational
   Organizing and Supporter Management tool.
 - My roles and responsibilities include:
