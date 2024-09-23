@@ -42,10 +42,10 @@
   everyone is aligned on the product’s requirements and quality expectations.
 - Open communication is crucial for identifying potential issues early and ensuring that feedback is given in a 
   timely manner. 
-- Collaboration is also key — QA should not operate in isolation Instead, working as a part of a cross-functional team 
+- Collaboration is also key - QA should not operate in isolation Instead, working as a part of a cross-functional team 
   ensures that quality is integrated throughout the entire development lifecycle.
 - Additionally, a successful team embraces a continuous improvement mindset. This means being open to feedback, 
-  learning from mistakes, and always looking for ways to improve processes — whether that’s through automation, 
+  learning from mistakes, and always looking for ways to improve processes - whether that’s through automation, 
   better test strategies, or enhancing workflows. 
 - Finally, mutual respect and trust within the team are essential for fostering creativity, problem-solving, 
   and efficiency.
