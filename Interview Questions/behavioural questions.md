@@ -50,4 +50,4 @@
 - Finally, mutual respect and trust within the team are essential for fostering creativity, problem-solving, 
   and efficiency.
 - When everyone is aligned, shares the same vision, and feels empowered to contribute, the team can deliver 
-  high-quality products while maintaining strong working relationships."
+  high-quality products while maintaining strong working relationships.
