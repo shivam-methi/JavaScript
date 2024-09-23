@@ -54,8 +54,8 @@
 
 
 ### Q: how do you keep yourself updated?
--As a QA professional, I understand the importance of staying updated with the latest industry trends, tools, 
- and testing methodologies. I do this in several ways:
+- As a QA professional, I understand the importance of staying updated with the latest industry trends, tools, 
+  and testing methodologies. I do this in several ways:
 - Continuous Learning: I regularly take online courses and certifications in QA and automation tools. 
   Platforms like Udemy, Coursera, and LinkedIn Learning offer great resources that help me stay updated on new technologies and frameworks.
 - Industry Blogs and Websites: I follow key industry blogs, forums, and websites such as Ministry of Testing, 
