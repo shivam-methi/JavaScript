@@ -2,10 +2,8 @@
 
 
 ### with id:
-```js
     #username
     input#username
-```
 
 
 ### with class:
