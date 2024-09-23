@@ -21,3 +21,16 @@
   phase of development, truly excites me. 
 - Additionally, being able to contribute to improving the testing processes and utilizing modern automation tools is
   something I look forward to, as it aligns with my career goals and passion for creating reliable, efficient, and user-friendly products.
+
+
+### Q: why should we hire you? 
+- You should hire me because I bring a combination of technical expertise, hands-on experience, and a strong 
+  passion for quality assurance. 
+- With over 5 years of experience in both Manual and Automation testing, I have a solid foundation in ensuring 
+  the delivery of high-quality products. 
+- I am proficient in API testing, having worked with tools like Postman and Insomnia.
+- I’m also adaptable to new tools, processes and methodologies. 
+- My attention to detail allow me to identify potential issues early, saving time and resources during development.
+- Furthermore, I have a proactive mindset. I enjoy working closely with developers, product managers, and 
+  other stakeholders to ensure that quality is embedded throughout the entire software development lifecycle. 
+- I’m excited about the opportunity to contribute to your team’s success and help enhance the quality of your product.
