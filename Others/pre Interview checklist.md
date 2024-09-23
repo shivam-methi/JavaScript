@@ -1,0 +1,13 @@
+## Pre Interview Checklist:
+- Anydesk connect - 2 devices - mobile network
+- web whatsapp
+- Intro
+- ChatGPT - new chat 
+- Javascript.info 
+- Xpath cheat sheet
+- HTTP error codes 
+- oops
+- Promises 
+- Cypress/BDD
+- Postman
+- Jmeter info
