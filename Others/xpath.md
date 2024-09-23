@@ -1,4 +1,9 @@
 ## Xpath:
+- XPath stands for XML Path Language. 
+- It's a query-based syntax for XML schema & HTML documents that testers use to traverse elements within the document. 
+- Expressions refer to the values used in XPath, and an expression typically contains the chaining of multiple 
+  elements with a specific syntax or structure.
+
 
 ### Absolute xpath:
  - It contains the complete path from the root element 
@@ -147,3 +152,13 @@
     //option[@value="1-5"]//preceding-sibling::option
     //option[@value="plan_to_use"]//preceding-sibling::option
 ```
+
+
+### Advantages of XPath:
+- XPath supports all major test automation libraries and programming languages
+- It provides bidirectional flow which means traversal can be both ways
+- Supports both XML and HTML documents.
+- XPath expression works at any document level, with no restriction to start the traversal at a specific level
+- XPath selector is compatible with old-age browsers as well as modern browsers
+- XPath locator provides Axes and methods. You can use them in XPath expression to solve complex locator problems.
+
