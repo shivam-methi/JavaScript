@@ -110,7 +110,6 @@
 
 
 ### preceding-sibling:  
-`
     //tagname[@Attribute=’Value’]//preceding-sibling::tagname
     //option[@value="pt_BR"]//preceding-sibling::option
     //option[@value="1-5"]//preceding-sibling::option
