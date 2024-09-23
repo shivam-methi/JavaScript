@@ -1,4 +1,4 @@
-### if you have another offer letter, which one will you choose?
+### Q: if you have another offer letter, which one will you choose?
 - When considering multiple offers, my decision would be based on several key factors. 
 - First and foremost, I would look for opportunities where I can continue to grow as a QA professional, 
   particularly in areas such as automation, new testing methodologies, or working with advanced technologies 
