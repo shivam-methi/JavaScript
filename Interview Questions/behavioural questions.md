@@ -56,18 +56,18 @@
 ### Q: how do you keep yourself updated?
 - As a QA professional, I understand the importance of staying updated with the latest industry trends, tools, 
   and testing methodologies. I do this in several ways:
-- Continuous Learning: I regularly take online courses and certifications in QA and automation tools. 
-  Platforms like Udemy, Coursera, and LinkedIn Learning offer great resources that help me stay updated on new technologies and frameworks.
-- Industry Blogs and Websites: I follow key industry blogs, forums, and websites such as Ministry of Testing, 
-  Test Automation University, and Stack Overflow. These platforms provide valuable insights into new testing techniques, tools, and real-world scenarios.
-- Attending Conferences/Webinars: I participate in QA-related webinars and attend industry conferences like 
-  Cypress Conf or Testing Meetups whenever possible. These events are a great way to network, learn from experts, 
-  and keep up with advancements in software testing.
-- Community Engagement: I’m part of online QA communities where I can share knowledge and learn from other
-  professionals. Engaging in discussions on platforms like Reddit, Discord, LinkedIn groups, or Slack channels 
-  helps me stay connected with the QA ecosystem.
-- Hands-on Practice: Finally, I actively experiment with new tools and frameworks in my personal projects or 
-  within my current role. Whether it’s exploring a new automation tool, testing strategy, or API testing tool like Insomnia, I make sure to keep my skills sharp through practical application.
+  - Continuous Learning: I regularly take online courses and certifications in QA and automation tools. 
+    Platforms like Udemy, Coursera, and LinkedIn Learning offer great resources that help me stay updated on new technologies and frameworks.
+  - Industry Blogs and Websites: I follow key industry blogs, forums, and websites such as Ministry of Testing, 
+    Test Automation University, and Stack Overflow. These platforms provide valuable insights into new testing techniques, tools, and real-world scenarios.
+  - Attending Conferences/Webinars: I participate in QA-related webinars and attend industry conferences like 
+    Cypress Conf or Testing Meetups whenever possible. These events are a great way to network, learn from experts, 
+    and keep up with advancements in software testing.
+  - Community Engagement: I’m part of online QA communities where I can share knowledge and learn from other
+    professionals. Engaging in discussions on platforms like Reddit, Discord, LinkedIn groups, or Slack channels 
+    helps me stay connected with the QA ecosystem.
+  - Hands-on Practice: Finally, I actively experiment with new tools and frameworks in my personal projects or 
+    within my current role. Whether it’s exploring a new automation tool, testing strategy, or API testing tool like Insomnia, I make sure to keep my skills sharp through practical application.
 - This multi-faceted approach helps me stay at the forefront of the industry and ensures that I am always prepared 
   to implement the best practices in my work.
 
