@@ -176,4 +176,14 @@
 
 
 
-### Q: 
+### Q: how do you provide estimates to user stories as a QA?
+- #### Understand the User Story
+- #### Identify Testing Scope
+- #### Estimate Based on Complexity
+- #### Breakdown of QA Activities
+- #### Consider Test Automation
+- #### Collaboration with Team
+- #### Buffer for Uncertainty
+- #### Use Historical Data
+- #### Provide Final Estimate
+- #### Continuous Review and Adjustment
