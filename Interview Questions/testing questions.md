@@ -146,30 +146,34 @@
     dependencies on other systems or components.
   - Higher-risk stories, such as those impacting critical or unstable areas of the product, may require additional 
     time for more thorough testing.
-
-    
-- #### Breakdown of QA Activities: I would break down the tasks involved in testing the user story to provide a detailed estimate:
-
-Test Case Design: Time required to write and review test cases based on acceptance criteria.
-Test Execution: Estimate how long it will take to execute both manual and automated tests.
-Bug Reporting and Verification: Include time for logging, tracking, and verifying bug fixes.
-Exploratory Testing: If necessary, account for additional exploratory testing to cover unanticipated issues.
+- #### Breakdown of QA Activities: 
+  - I would break down the tasks involved in testing the user story to provide a detailed estimate.
+  - Time required to write and review test cases based on acceptance criteria.
+  - Estimate how long it will take to execute both manual and automated tests.
+  - Include time for logging, tracking, and verifying bug fixes.
+  - If necessary, account for additional exploratory testing to cover unanticipated issues.
 - #### Consider Test Automation:
-
-Automation Effort: If the story requires automated tests, I would factor in time for writing and maintaining test scripts. Automation usually takes longer initially but speeds up future regression testing.
+  - If the story requires automated tests, I would factor in time for writing and maintaining test scripts. 
+  - Automation usually takes longer initially but speeds up future regression testing.
 - #### Collaboration with Team:
-
-Cross-Team Dependencies: If the user story has dependencies on development, design, or third-party systems, I would account for the coordination effort and potential delays.
-Team Estimation Session: Participating in team estimation sessions (e.g., sprint planning or backlog refinement) ensures that I align my estimates with the development team. I would use techniques such as planning poker or T-shirt sizing to reach consensus.
+  - If the user story has dependencies on development, design, or third-party systems, I would account for 
+    the coordination effort and potential delays.
+  - Participating in team estimation sessions (e.g., sprint planning or backlog refinement) ensures that I align 
+    my estimates with the development team. 
 - #### Buffer for Uncertainty:
-
-Add Buffer Time: I would include a small buffer in my estimate to account for unexpected issues such as environment instability, ambiguous requirements, or last-minute changes.
+  - I would include a small buffer in my estimate to account for unexpected issues such as environment instability, 
+    ambiguous requirements, or last-minute changes.
 - #### Use Historical Data:
-
-Leverage Past Experience: I would refer to similar user stories or past sprints to guide my estimation. Historical data can help in understanding typical time frames for testing similar features.
+  - I would refer to similar user stories or past sprints to guide my estimation. 
+  - Historical data can help in understanding typical time frames for testing similar features.
 - #### Provide Final Estimate:
-
-Story Point or Hour Estimate: Based on the complexity and effort required, I would provide either a story point estimate (relative effort) or a time estimate (in hours or days). Typically, story points are used in Agile teams to reflect effort, while time estimates can be used when more detailed planning is required.
+  - Based on the complexity and effort required, I would provide a time estimate (in hours or days). 
+  - Typically, story points are used in Agile teams to reflect effort, while time estimates can be used when 
+    more detailed planning is required.
 - #### Continuous Review and Adjustment:
+  - After providing an initial estimate, I would continuously review the actual progress during the sprint and 
+    adjust if any significant blockers or scope changes arise.
 
-Refine Estimates During Sprint: After providing an initial estimate, I would continuously review the actual progress during the sprint and adjust if any significant blockers or scope changes arise.
+
+
+### Q: 
