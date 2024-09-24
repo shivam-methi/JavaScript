@@ -35,6 +35,7 @@
   - Once I’ve tested the feature, I can provide feedback on potential improvements or gaps in functionality.
 
 
+
 ### Q: what would be your Approach to execute 1000 test cases in short span of time?
 - #### Prioritize Test Cases:
   - Start by identifying the high-risk and critical functionalities that must be tested. 
@@ -80,6 +81,50 @@
 - #### Continuous Reporting and Stakeholder Communication:
   - Keep stakeholders informed about the progress, blockers, and any critical defects found. 
   - This helps in making informed decisions about extending time if needed.
+
+
+
+### Q: what will be your approach if you found a major bug before release?
+- #### Immediate Bug Reporting:
+  - First, I would immediately log the bug in the defect tracking tool (e.g., JIRA), ensuring that I provide 
+    detailed information, including steps to reproduce, screenshots, logs, and any other relevant data 
+    that can help developers diagnose the issue quickly.
+  - Since it’s a major bug, I would categorize it appropriately, marking it as "Critical" or "Blocker" so that 
+    the development team understands the urgency and impact.
+- #### Assess the Impact:
+  - I would assess how the bug affects the core functionality, user experience, or business impact. 
+  - Does the bug cause a crash, data loss, or compromise security? Understanding the severity and scope is essential 
+    to communicate effectively with stakeholders.
+  - If possible, I would investigate whether there are any temporary workarounds that could mitigate the issue and 
+    help users continue using the application without critical problems.
+- #### Communicate with Stakeholders:
+  - I would promptly inform key stakeholders, including the product owner, development team, and project manager, 
+    about the bug and its potential impact on the release. 
+  - Clear communication is vital to ensure that all parties understand the risks.
+- #### Collaborate with Development Team:
+  - I would collaborate with the development team to determine how quickly the bug can be resolved. 
+  - Depending on the nature of the bug, we would discuss whether it's feasible to fix it immediately, apply a 
+    patch post-release, or defer the release.
+  - If a fix is possible, we would assess the risks involved in implementing a last-minute change. 
+  - I’d also consider the time required for retesting and ensure there’s no negative impact on other functionalities.
+- #### Retesting After Fix:
+  - Once the bug is fixed, I would prioritize testing the fix thoroughly and perform a quick round of regression 
+    testing to ensure the fix hasn’t introduced any new issues, especially in critical areas.
+  - If time is limited, I would focus on the areas related to the bug fix and its dependencies, minimizing the risk
+    of regression while still delivering quality.
+- #### Release Decision:
+  - I would participate in the discussion with stakeholders on whether the release should be delayed. 
+  - If the bug significantly impacts key functionalities or user experience, delaying the release might be the 
+    best option.
+  - If the bug is non-critical or has a workaround, and the release cannot be delayed, I would ensure that the 
+    team is prepared to release a hotfix or patch immediately after release.
+- #### Post-Release Monitoring:
+  - If the decision is made to release with the bug, I would ensure that we closely monitor the application 
+    post-release for any user-reported issues or incidents, with a plan for quickly addressing the bug.
+- #### Document Lessons Learned:
+  - After the issue is resolved, I would participate in a retrospective to analyze why the bug was not caught earlier,
+    how we could improve our process, and whether adjustments to our test strategy, communication, or tooling are needed to prevent such situations in the future.
+
 
 
 ### Q: 
