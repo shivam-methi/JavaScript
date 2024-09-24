@@ -17,26 +17,26 @@
   - If acceptance criteria are not available, I would document assumptions on the expected behavior of the system. 
   - These assumptions could be based on past experiences or conversations with stakeholders. 
   - I’d ensure that these assumptions are communicated with the team to avoid any misunderstandings.
-#### - Prioritize User Experience:
+- #### Prioritize User Experience:
   - A lack of criteria might mean that there’s flexibility in how the feature is expected to behave. 
   - I would prioritize the end-user experience by testing various workflows and ensuring the application behaves in 
     a way that is intuitive and aligned with user expectations.
-- Focus on Critical Areas: 
+- #### Focus on Critical Areas: 
   - Without acceptance criteria, I would prioritize testing high-risk areas such as security, performance, and 
     data integrity. 
   - This can help ensure that key areas are functioning as expected.
-- Regression Testing:
+- #### Regression Testing:
   - Since there’s no clear specification, it's important to ensure that new features or changes do not negatively 
     impact existing functionality. 
   - I would focus on regression testing to confirm that the rest of the application continues to perform as expected.
-- Seek Clarification & Provide Feedback:
+- #### Seek Clarification & Provide Feedback:
   - During the process, I would regularly communicate with stakeholders to validate any assumptions and clarify 
     any ambiguities. 
   - Once I’ve tested the feature, I can provide feedback on potential improvements or gaps in functionality.
 
 
 ### Q: what would be your Approach to execute 1000 test cases in short span of time?
-- Prioritize Test Cases:
+- #### Prioritize Test Cases:
   - Start by identifying the high-risk and critical functionalities that must be tested. 
   - Test cases covering core features or areas with a high likelihood of defects should be prioritized.
   - Focus on test cases that directly affect business outcomes, ensuring the most important features are 
