@@ -41,37 +41,45 @@
   - Test cases covering core features or areas with a high likelihood of defects should be prioritized.
   - Focus on test cases that directly affect business outcomes, ensuring the most important features are 
     validated first.
-Test Case Categorization:
+- #### Test Case Categorization:
+  - Group the test cases into critical, high, medium, and low priority. 
+  - Critical test cases should be executed first, followed by high-priority ones.
+  - Some tests may be reusable across different features. Execute these first to save time.
+- #### Automation:
+  - If there are any test cases that can be automated, focus on automating repetitive, data-driven, or 
+    regression test cases. 
+  - This frees up time to focus on manual testing where it is truly necessary.
+- #### Parallel Execution: 
+  - Use test automation frameworks that support parallel execution to run multiple tests concurrently, 
+    reducing overall execution time.
+- #### Use of Efficient Test Execution Tools:
+  - Use tools like TestRail or JIRA to organize, execute, and track progress efficiently. 
+  - Such tools streamline test execution by offering dashboards and metrics to manage the test cases.
+- #### Team Collaboration and Distribution:
+  - Divide the test cases among the team based on their expertise. 
+  - Assign the most skilled testers to the critical areas, ensuring those are handled with speed and accuracy.
+  - In some cases, pair testers with developers or other QA engineers to quickly execute tests and resolve issues 
+    on the spot.
+- #### Smoke and Sanity Testing:
+  - Before executing the entire suite, run a quick smoke test to ensure the basic functionalities are stable. 
+  - This helps avoid spending time testing on unstable builds.
+  - Perform sanity checks on new features or fixes to ensure they work as expected before diving into detailed 
+    test cases.
+- #### Time Management:
+  - Allocate time for each group of test cases based on complexity and criticality. 
+  - Avoid spending too much time on low-priority or non-critical areas when time is limited.
+  - Continuously track the progress of test execution and adjust priorities if needed to ensure all high-priority 
+    cases are covered within the available time.
+- #### Regression Testing:
+  - Focus on testing areas that are more likely to break with the new changes. 
+  - Full regression may not be feasible in a short time, so use a risk-based approach to identify which regression 
+    cases to run.
+- #### Use Exploratory Testing for Quick Feedback:
+- If time is extremely limited, complement formal test case execution with exploratory testing. 
+- This allows testers to quickly identify defects without the need for a structured test case.
+- #### Continuous Reporting and Stakeholder Communication:
+- Keep stakeholders informed about the progress, blockers, and any critical defects found. 
+- This helps in making informed decisions about extending time if needed.
 
-Divide into Essential vs. Non-Essential: Group the test cases into critical, high, medium, and low priority. Critical test cases should be executed first, followed by high-priority ones.
-Identify Reusable Test Cases: Some tests may be reusable across different features. Execute these first to save time.
-Automation:
 
-Leverage Automation: If there are any test cases that can be automated, focus on automating repetitive, data-driven, or regression test cases. This frees up time to focus on manual testing where it is truly necessary.
-Parallel Execution: Use test automation frameworks that support parallel execution to run multiple tests concurrently, reducing overall execution time.
-Use of Efficient Test Execution Tools:
-
-Test Management Tools: Use tools like TestRail or JIRA to organize, execute, and track progress efficiently. Such tools streamline test execution by offering dashboards and metrics to manage the test cases.
-Batch Execution: If automation isn’t an option, group similar test cases and execute them in batches to save time.
-Team Collaboration and Distribution:
-
-Distribute Tests Across Team: Divide the test cases among the team based on their expertise. Assign the most skilled testers to the critical areas, ensuring those are handled with speed and accuracy.
-Pair Testing: In some cases, pair testers with developers or other QA engineers to quickly execute tests and resolve issues on the spot.
-Smoke and Sanity Testing:
-
-Smoke Testing: Before executing the entire suite, run a quick smoke test to ensure the basic functionalities are stable. This helps avoid spending time testing on unstable builds.
-Sanity Testing: Perform sanity checks on new features or fixes to ensure they work as expected before diving into detailed test cases.
-Time Management:
-
-Set Time Limits for Test Execution: Allocate time for each group of test cases based on complexity and criticality. Avoid spending too much time on low-priority or non-critical areas when time is limited.
-Monitor Progress: Continuously track the progress of test execution and adjust priorities if needed to ensure all high-priority cases are covered within the available time.
-Regression Testing:
-
-Selective Regression: Focus on testing areas that are more likely to break with the new changes. Full regression may not be feasible in a short time, so use a risk-based approach to identify which regression cases to run.
-Use Exploratory Testing for Quick Feedback:
-
-Exploratory Testing: If time is extremely limited, complement formal test case execution with exploratory testing. This allows testers to quickly identify defects without the need for a structured test case.
-Continuous Reporting and Stakeholder Communication:
-
-Regular Updates: Keep stakeholders informed about the progress, blockers, and any critical defects found. This helps in making informed decisions about extending time if needed.
-
+### Q: 
