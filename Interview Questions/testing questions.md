@@ -176,14 +176,31 @@
 
 
 
-### Q: how do you provide estimates to user stories as a QA?
-- Understand the User Story
-- Identify Testing Scope
-- Estimate Based on Complexity
-- Breakdown of QA Activities
-- Consider Test Automation
-- Collaboration with Team
-- Buffer for Uncertainty
-- Use Historical Data
-- Provide Final Estimate
-- Continuous Review and Adjustment
+### Q: What is your approach to do requirements review?
+- Understand the Purpose of Requirement Reviews
+  - Catch Defects Early
+  - Ensure Testability
+- Preparation
+  - Gather Documents
+  - Understand the Scope
+- Checklist for Requirement Reviews
+  - Clarity and Completeness
+  - Testability
+  - Consistency
+  - Acceptance Criteria
+  - Functional vs. Non-Functional Requirements
+  - Dependencies and Impact Analysis
+- Edge Cases and Negative Scenarios
+- Involve Stakeholders
+  - Collaborative Review
+  - Clarify with Product Owners/Business Analysts
+- Identify Gaps or Missing Requirements
+  - Look for Missing Functionality
+  - Ask “What-If” Questions
+- Document Feedback and Follow-Up
+  - Log Issues
+  - Propose Improvements
+- Final Sign-Off
+  - Requirement Sign-Off
+- Prepare for Testing
+  - Draft Test Scenarios
