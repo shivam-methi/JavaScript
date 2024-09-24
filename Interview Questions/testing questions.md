@@ -75,11 +75,11 @@
   - Full regression may not be feasible in a short time, so use a risk-based approach to identify which regression 
     cases to run.
 - #### Use Exploratory Testing for Quick Feedback:
-- If time is extremely limited, complement formal test case execution with exploratory testing. 
-- This allows testers to quickly identify defects without the need for a structured test case.
+  - If time is extremely limited, complement formal test case execution with exploratory testing. 
+  - This allows testers to quickly identify defects without the need for a structured test case.
 - #### Continuous Reporting and Stakeholder Communication:
-- Keep stakeholders informed about the progress, blockers, and any critical defects found. 
-- This helps in making informed decisions about extending time if needed.
+  - Keep stakeholders informed about the progress, blockers, and any critical defects found. 
+  - This helps in making informed decisions about extending time if needed.
 
 
 ### Q: 
