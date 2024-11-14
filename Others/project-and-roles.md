@@ -50,10 +50,10 @@
      hidden issues.
 
 ### Automation Framework Development:
-   - Develop and maintain an automation framework using Javascript, Cypress for UI and API automation tools 
-     for backend validation.
-   - Automate high-priority, repetitive tests and integrate them into the CI/CD pipeline to ensure quick feedback 
-     on every build.
+   - Develop and maintain an automation framework using Javascript, Cypress with mocha/chai framework for UI and 
+     API automation tools for backend validation.
+   - Automate high-priority, repetitive tests where maintain repository using the Github and integrate them 
+     into the CI/CD pipeline to ensure quick feedback on every build.
 
 ### Bug Reporting and Collaboration:
    - Document and track bugs, providing clear steps and impact assessments, and work closely with developers to 
@@ -62,6 +62,7 @@
 ### Continuous Improvement & Maintenance:
    - Regularly update and optimize both manual and automated test suites to adapt to changes, reduce execution time, 
      and improve test coverage.
+
 
 - This combined approach enables me to ensure comprehensive testing coverage and maintain high-quality standards 
   across releases.
