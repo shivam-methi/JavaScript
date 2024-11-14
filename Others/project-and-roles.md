@@ -62,8 +62,6 @@
 ### Continuous Improvement & Maintenance:
    - Regularly update and optimize both manual and automated test suites to adapt to changes, reduce execution time, 
      and improve test coverage.
-
-
-- This combined approach enables me to ensure comprehensive testing coverage and maintain high-quality standards 
-  across releases.
+   - This combined approach enables me to ensure comprehensive testing coverage and maintain high-quality 
+     standards across releases.
 
