@@ -1,5 +1,6 @@
 ## Project Explanation:
-- **Platform Overview**:
+
+### Platform Overview:
   - OutreachCircle is a relational organizing and supporter management tool tailored for political parties, individual candidates, and some NGOs.
   - It enables users to create targeted actions to connect with supporters and voters.
 
