@@ -55,7 +55,7 @@
 
     }
 
-    letTest(); // ReferenceError: y is not defined
+    letTest(); // 10  ReferenceError: y is not defined
 ```
 
 

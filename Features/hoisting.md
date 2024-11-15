@@ -5,7 +5,7 @@
 
 ### Variable Hoisting:
 - javascript only hoists declaration not initilzation 
-- variable will be the undefined until the line where it's initlized is reached
+- variable will be the `undefined` until the line where it's initlized is reached
 
 ### with `var`:
 ```js
@@ -64,17 +64,17 @@
 
 ### Advantages:
 -  improve flexibility, redability and maintenance by allowing you to place your main logic at the top 
-   and helper functions at the bottom
+   and helper functions at the bottom.
 -  help to avoid some ReferenceErrors by ensuring that variables are at least declared, 
    even if they haven't been initialized yet.
 
 
 
 ### Disadvantages:
-- Although variable declarations are hoisted, their assignments or initialisation are not. 
-- If you try to access a variable before it is assigned a value, it will have the value undefined, 
+- Although variable declarations are hoisted, their assignments or initialization are not. 
+- If you try to access a variable before it is assigned a value, it will have the value `undefined`, 
   which can lead to unexpected behaviour.
 - hoisting can lead to subtle bugs in your code. 
-- For example, if you have multiple variables with the same name declared in different scopes, 
+- For example: if you have multiple variables with the same name declared in different scopes, 
   the hoisting behaviour can cause unexpected results when accessing those variables.
 
