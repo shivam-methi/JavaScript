@@ -1,7 +1,16 @@
 ## Javascript/Typescript Questions:
 
+| No. | Questions                                                      |
+|-----|----------------------------------------------------------------|
+| 1   | [why do we use javascript and not java?](#1-why-do-we-use-javascript-and-not-java) |
+| 2   | [how do you utilize js in automation?](#2-how-do-you-utilize-js-in-automation) |
 
-### Q: why do we use javascript and not java?
+---
+
+## Answers
+
+
+### 1. why do we use javascript and not java?
 - The choice between JavaScript and Java in test automation depends on the project requirements, 
   the technology stack, and the nature of the application being tested. 
 - while Java remains a strong choice for broader test automation, especially for backend services or large-scale
@@ -44,7 +53,7 @@
     and cross-browser testing.
 
 
-### Q: how do you utilize js in automation?
+### 2. how do you utilize js in automation?
 - JavaScript plays a crucial role in my test automation strategy, especially when working with tools and 
   frameworks designed for web applications.
 - JavaScript allows me to create robust, scalable, and maintainable test automation scripts.
