@@ -2,8 +2,8 @@
 
 | No. | Questions                                                      |
 |-----|----------------------------------------------------------------|
-| 1   | [What are the possible ways to create objects in JavaScript?](#1. what-are-the-possible-ways-to-create-objects-in-javascript) |
-| 2   | [What is a prototype chain?](#2. what-is-a-prototype-chain)       |
+| 1   | [What are the possible ways to create objects in JavaScript?](#1-what-are-the-possible-ways-to-create-objects-in-javascript) |
+| 2   | [What is a prototype chain?](#2-what-is-a-prototype-chain)     |
 
 ---
 
