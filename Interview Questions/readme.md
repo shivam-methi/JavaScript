@@ -1,22 +1,22 @@
-# FAQ
+# Table of Contents
 
-## Questions
-- [FAQ](#faq)
-  - [Questions](#questions)
-  - [Answers](#answers)
-    - [What is Markdown?](#what-is-markdown)
-    - [How do I create a hyperlink in Markdown?](#how-do-i-create-a-hyperlink-in-markdown)
+| No. | Questions                                                      |
+|-----|----------------------------------------------------------------|
+| 1   | [What are the possible ways to create objects in JavaScript?](#what-are-the-possible-ways-to-create-objects-in-javascript) |
+| 2   | [What is a prototype chain?](#what-is-a-prototype-chain)       |
 
 ---
 
 ## Answers
 
-### What is Markdown?
-Markdown is a lightweight markup language with plain-text formatting syntax. It is widely used to format README files, write documentation, and create web content.
+### What are the possible ways to create objects in JavaScript?
+JavaScript provides several ways to create objects:
+1. Object Literals
+2. Constructor Functions
+3. `Object.create()` method
+4. Classes (ES6)
 
 ---
 
-### How do I create a hyperlink in Markdown?
-To create a hyperlink, use the following syntax:
-```markdown
-[link text](url)
+### What is a prototype chain?
+The prototype chain is a mechanism in JavaScript by which objects inherit properties and methods from other objects. Every object has an internal link to another object called its prototype, and this chain continues until it reaches `null`.
