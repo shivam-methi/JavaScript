@@ -1,0 +1,27 @@
+Dependencies:
+
+1. Rest Assured Core Dependency: 
+- This is the main dependency required for using Rest Assured. 
+- It provides the classes and methods to interact with RESTful APIs.
+
+
+2. JSONPath Dependency (for JSON parsing):
+- This dependency is used for extracting and validating values from JSON responses 
+  using JSONPath expressions.
+
+
+3. XMLPath Dependency (for XML parsing):
+- If you're working with XML responses, you'll need this dependency for parsing XML data.
+
+
+4. JUnit or TestNG (for Test Execution):
+- You will need a testing framework like JUnit or TestNG to organize and execute your test cases. 
+- You can choose one of these based on your preferred test framework.
+
+
+5. Gson/Jackson (for JSON Serialization/Deserialization): 
+- If you need to convert Java objects to JSON and vice versa (serialization/deserialization), 
+  you can use either Gson or Jackson.
+
+
+6. 

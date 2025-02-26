@@ -1,0 +1,64 @@
+Annotations:
+- Annotations in testing frameworks like TestNG are special forms of metadata that provide information 
+  about how to execute tests.
+- They are used to define specific behaviors for test methods, such as setup and teardown operations, 
+  test configuration.
+
+
+1. @Test:
+- This annotation is used to define a test case in TestNG.
+- It can also be configured with parameters like priority, dependsOnMethods, groups, etc.
+  priority: Defines the order in which tests should be executed.
+  dependsOnMethods: Specifies that a test depends on the successful execution of another test.
+  enabled: Allows you to disable a test.
+
+
+2. @BeforeMethod:
+- Runs before each test method. It's commonly used to set up the test environment, 
+  such as opening a browser or initializing test data.
+- Typically used to execute setup operations before each test case.
+
+
+3. @AfterMethod:
+- Runs after each test method. It is used to clean up resources, such as closing the browser 
+  or clearing session data.
+- Commonly used for teardown or cleanup after each test case.
+
+
+4. @BeforeClass:
+- Runs before the first test method in the current class. 
+- It’s usually used for tasks that need to be executed once for the entire class, 
+  like initializing shared resources.
+- Set up resources that are shared among all tests in a class.
+
+
+5. @AfterClass:
+- Runs after all the test methods in the current class have been executed. 
+- This is typically used to release shared resources.
+- Clean up operations for resources initialized in the @BeforeClass method.
+
+
+6. @BeforeSuite:
+- Runs before the execution of all tests in the current suite. 
+- It’s often used for global setup tasks like configuring the test environment or 
+  initializing external services.
+- Typically used for suite-wide setup operations.
+
+
+7. @AfterSuite:
+- Runs after the execution of all tests in the current suite. 
+- It’s used for global cleanup tasks, such as closing external connections or generating reports.
+- Used for suite-wide teardown operations.
+
+
+8. @DataProvider:
+- Used to supply test data to a test method. 
+- It allows for data-driven testing by passing multiple sets of data to the same test method.
+- Useful for testing with different input values in the same test case.
+
+
+9. @Parameters:
+- Used to pass parameters from the testng.xml file to test methods. 
+- It allows for parameterized testing where the values are specified externally.
+- For running tests with different sets of parameters specified in the XML configuration.
+

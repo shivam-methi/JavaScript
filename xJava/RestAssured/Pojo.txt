@@ -1,0 +1,22 @@
+Pojo in RestAssured:
+
+- In Rest Assured, you can use POJOs (Plain Old Java Objects) to handle request and response bodies 
+  for easy serialization and deserialization of JSON or XML. 
+- This approach allows you to map JSON or XML objects to Java classes
+- makes it easier to manage the structure and content of your API requests and responses.
+-  Using POJOs improves code readability, allows for type safety, and reduces the need for 
+   hardcoded JSON strings.
+
+
+Steps to Use POJO in Rest Assured:
+
+1. Create a POJO Class: Define a POJO class with the necessary fields that match the structure 
+                        of the JSON/XML body.
+2. Serialization: Convert (serialize) a POJO to JSON/XML when sending data in a request body.
+3. Deserialization: Convert (deserialize) a JSON/XML response body into a POJO.
+
+
+Serialization/Deserialization Libraries:
+- By default, Rest Assured uses the following libraries for serialization/deserialization:
+    Jackson (for JSON)
+    JAXB (for XML)

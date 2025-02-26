@@ -1,0 +1,88 @@
+- Structure is combine UI automation using Selenium, 
+- API automation using Rest Assured, 
+- additional elements like BDD with Cucumber, 
+- and integration with Jenkins/GitHub CI.
+
+Folder Structure:
+ProjectName/
+│
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       ├── base/                # Base classes for API & WebDriver setup
+│   │       ├── pages/               # Page Object Model classes (UI elements and actions)
+│   │       ├── stepDefinitions/     # Step definitions for Cucumber (BDD)
+│   │       ├── utils/               # Utility classes  for reusable code (e.g., loggers, readers)
+│   │       ├── api/                 # Core API logic (request methods, authentication)
+│   │       ├── models/              # POJOs for request and response bodies (for serialization/deserialization)
+│   │       └── runners/             # Test runners (TestNG or Cucumber runners)
+│
+├── src/
+│   └── test/
+│       └── java/
+│           ├── tests/               # Test classes for functional, regression, and API tests
+│           ├── feature/             # Feature files for BDD tests
+│           ├── resources/           # Test data files, configuration files
+│           └── reports/             # Generated reports (HTML, ExtentReports, etc.)
+│
+├── config/                          # Configuration files (e.g., config.properties)
+├── pom.xml                          # Maven dependencies for project (libraries)
+├── Jenkinsfile                      # Jenkins pipeline configuration
+└── README.md                        # Documentation
+
+1. base: 
+- BaseAPI.java: Manages Rest Assured setup for API testing. Handles base URL, headers, authentication tokens.
+- BaseTest.java: Manages Selenium WebDriver setup for UI automation, browser configuration (Chrome, Firefox), 
+                 and WebDriver initialization.
+- ConfigReader.java: Reads values from the config.properties file for base URLs, browser details, 
+                     and environment configurations.
+
+
+2. pages/ (Page Object Model - POM for UI Automation)
+- This folder contains classes for each web page. Each class defines the web elements and actions that can be 
+  performed on that page.
+- The POM helps keep the test logic separate from the page structure, improving maintainability.
+
+
+3. stepDefinitions/ (Cucumber Step Definitions for BDD)
+- This folder holds Cucumber step definitions. These methods map the Gherkin steps written in the feature files 
+  to Java methods, which perform the actual actions on the web page or APIs.
+- The Cucumber approach helps to communication between technical and non-technical team members.
+
+
+4. api/ (API Interaction Logic - Rest Assured)
+- The API classes handle RESTful API operations such as GET, POST, PUT, DELETE, and validations. 
+- These classes ensure that the test code and API interaction logic remain separate.
+- API response and request validations are handled here.
+
+
+5. models/ (POJOs for API Request/Response)
+- Contains POJO classes that map to the request and response body of the API. 
+- This helps with serialization and deserialization of JSON data into Java objects.
+
+
+6. utils/ (Utility Classes)
+- Utility classes provide common reusable functionalities like reading test data, logging, screenshots, 
+  API authentication, etc.
+
+
+7. runners/ (Test Runners for Execution)
+- These classes trigger the execution of tests using TestNG, or Cucumber. 
+- It defines the test suite, including which test classes, step definitions, and reports will be generated.
+
+
+8. tests/ (Test Classes for Functional, Regression, API Testing)
+- This folder contains actual test classes that use the Page Object Model and API logic, feature files. 
+- These tests are used for both functional and regression testing.
+
+
+9. config/ (Configuration Files)
+- it Holds environment-specific configuration files, like URLs, API keys, database credentials, 
+  and other environment-related settings.
+
+
+10. Integration with CI/CD (Jenkins or GitHub CI)
+- The Jenkinsfile or GitHub CI pipeline configuration will automate the execution of tests whenever 
+  new code is pushed to the repository.
+- The tests are executed in the CI/CD pipeline, and reports (HTML/ExtentReports) are generated automatically.
+

@@ -1,0 +1,41 @@
+exceptions:
+
+
+1. NoSuchElementException:
+- This occurs when the WebDriver is unable to locate the element using the given selector (e.g., XPath, CSS, ID).
+
+
+2. StaleElementReferenceException:
+- This occurs when an element that was previously found becomes stale, 
+  meaning it is no longer attached to the DOM.
+- This often happens after a page refresh or DOM update.
+
+
+3. TimeoutException: 
+- This exception is thrown when an operation (e.g., locating an element, loading a page) 
+  takes longer than the specified time limit.
+
+
+4. ElementNotVisibleException:
+- This occurs when the element is present in the DOM but is not visible, 
+  and Selenium is trying to interact with it (e.g., clicking or sending text).
+
+
+5. ElementNotInteractableException: 
+-  This exception is thrown when the element is visible but not interactable 
+   (e.g., a disabled input field, or covered by another element).
+
+
+6. NoSuchFrameException:
+- This exception is thrown when trying to switch to a frame that doesn’t exist.
+
+
+7. NoAlertPresentException:
+- This exception occurs when Selenium tries to switch to an alert box but no alert is currently 
+  present on the page.
+
+
+8. WebDriverException:
+- This is a generic exception thrown by WebDriver when something goes wrong during command execution. 
+- This can happen due to various reasons, such as browser not responding, session crashes, or 
+  incorrect driver configurations.

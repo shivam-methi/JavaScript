@@ -1,0 +1,41 @@
+Parallel execution:
+- In the project, I implemented parallel execution to run multiple test cases concurrently, 
+- which significantly reduced the overall test execution time, especially given the complexity of the platform. 
+- Parallel execution is particularly useful when dealing with large regression suites and when tests 
+  need to be run across multiple browsers and environments.
+- Here’s how I approached parallel execution in the project:
+
+1. TestNG for Parallel Execution:
+- I used TestNG as the primary test execution framework for running tests in parallel. 
+- TestNG allows parallel execution of tests across Classes, Methods & Suites.
+- I configured TestNG's testng.xml file to enable parallel execution.
+    parallel="methods": This allows parallel execution of test methods across different classes.
+    thread-count="5": This defines the maximum number of threads that can be used to run tests in parallel. 
+
+
+2. WebDriver Parallel Execution with Selenium Grid:
+- For UI testing with Selenium, I used Selenium Grid to run tests in parallel across 
+  different browsers (Chrome, Firefox, Edge) and environments (local, staging, production). 
+- Selenium Grid allows multiple machines or nodes to run tests simultaneously, and the results 
+  are collected centrally.
+- Steps:
+    Hub and Node Setup:
+    The Hub is the central point where all the tests are triggered.
+    java -jar selenium-server-standalone.jar -role hub
+
+    Nodes are the machines (browsers) where the tests are executed.
+    java -jar selenium-server-standalone.jar -role node -hub http://localhost:4444/grid/register
+
+    Configuring WebDriver for Parallel Execution:
+    In the test scripts, I used ThreadLocal to manage separate WebDriver instances for each parallel thread. 
+    This ensures that each test gets its own WebDriver instance, preventing interference between tests.
+
+
+3. Parallel Execution in CI/CD Pipelines (Jenkins/GitHub CI):
+- Parallel execution was also integrated into the CI/CD pipeline using Jenkins and GitLab CI. 
+- These pipelines can handle parallel jobs, which means that multiple test suites or test classes can run 
+  in parallel, further reducing the test execution time.
+- I used the Jenkinsfile to configure parallel test execution. 
+- Jenkins can distribute tests across multiple nodes or machines, enabling parallel execution.
+- parallel { }: Defines multiple test stages that will run in parallel.
+- Each stage runs its own set of tests (UI, API) concurrently.

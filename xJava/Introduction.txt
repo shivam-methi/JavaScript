@@ -1,0 +1,9 @@
+- Good afternoon, myself shivam & I've Over 5 years of experience in IT, focused on Testing - Automation.
+- In my current role, I Develop and maintain automation frameworks for functional, regression, and end-to-end testing 
+  using Java, Selenium, and Rest Assured.
+- we have Automated API testing with Rest Assured and integrate with CI/CD pipelines like Jenkins and GitHub CI.
+- we Write BDD scenarios with Gherkin and implement step definitions using Cucumber.
+- I also Create and execute manual test cases as, identifying and reporting defects when needed.
+- I Perform post-deployment sanity and regression testing, along with weekly production sanity checks.
+- I also Collaborate closely with development and product teams to review business requirements 
+    and address any potential gaps. 

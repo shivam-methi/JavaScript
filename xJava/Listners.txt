@@ -1,0 +1,13 @@
+Listeners in TestNG:
+- TestNG listeners are interfaces that allow you to monitor test events such as the start, success, failure, 
+  or completion of test cases. 
+- You can implement these listeners to customize the test flow and take certain actions when these events occur.
+
+ Types of Listeners:
+ 
+1. ITestListener: Listens to test execution events like start, success, failure, or skipping of tests.
+2. IAnnotationTransformer: Modifies the annotations at runtime before the test execution begins.
+3. ISuiteListener: Listens to events at the suite level (before and after the entire test suite is executed).
+4. IInvokedMethodListener: Monitors the invocation of test methods, including configuration methods.
+5. IReporter: Generates a custom report once the tests have finished executing.
+6. IExecutionListener: Notifies when the execution starts or finishes.

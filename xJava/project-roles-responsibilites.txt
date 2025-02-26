@@ -1,0 +1,57 @@
+Project: 
+- Upwork Enterprises is a global freelancing platform that connects businesses and independent professionals 
+  from around the world. 
+- Upwork allows businesses to post job listings, and freelancers can bid on these jobs to offer their services. 
+- The platform enables collaboration across various industries, including software development, design, 
+   writing, marketing, and more. 
+- The project is focused on building and maintaining features that support these collaborations, 
+  enabling businesses and freelancers to interact seamlessly.
+- So there are different components & modules which they provides and we need to verify frontend and backend for the same.
+
+
+Roles and Responsibilites: 
+
+1. Develop and maintain robust automation frameworks for functional, regression, and end-to-end testing 
+   using Java, Selenium, and Rest Assured:
+- For UI automation, we used Selenium with a Page Object Model (POM) design pattern to maintain clear separation 
+  between the UI structure and test logic.
+- This structure made the framework highly maintainable and reusable across different modules. 
+- The framework supported functional, regression, and end-to-end testing, allowing us to quickly 
+  validate different workflows in the application.
+- we Write BDD scenarios in Gherkin syntax and implement step definitions using Cucumber for better 
+  collaboration and test clarity
+- The framework also supported data-driven testing by externalizing test data through files like Excel or JSON, 
+  enhancing its flexibility and scalability for multiple test scenarios.
+
+
+2. Automate API testing using Rest Assured to ensure coverage of RESTful web services and 
+   integrate scripts with CI/CD pipelines (e.g., Jenkins, GitHub CI):
+- For API testing, I automated the testing of RESTful services using Rest Assured. 
+- This involved creating reusable methods for common API operations (GET, POST, PUT, DELETE) and 
+  validating the response structure, status codes, and data integrity.
+- I also implemented JSON schema validation to ensure that API responses followed the expected structure 
+  and contained the correct data.
+- The API automation suite was integrated into the CI/CD pipeline using Jenkins and GitHub CI, 
+  allows the tests to be triggered automatically after each deployment. 
+  This ensured that any API-related issues were identified early in the development cycle.
+
+
+3. validate application functionality, usability, and performance, identifying and reporting defects promptly
+
+
+4. Perform sanity and regression testing post-deployment to ensure bug fixes and application stability, 
+   along with weekly production sanity checks and reporting
+
+
+
+
+Previous Projects:
+1. Upwork (Enterprise Module)
+2. Upwork (Component Library Module)
+3. Jitterbit - Cloud & SaaS Apps Integration and Middleware
+4. DirectScale - Multi level Marketing Management
+
+
+Previous Companies:
+1. Intelltech Zoom Private Limited (Jan 2019 – Feb 2021)
+2. Panorama Software Solutions (Jan 2019 – Feb 2021)

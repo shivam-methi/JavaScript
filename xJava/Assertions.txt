@@ -1,0 +1,19 @@
+Types of Assertions:
+
+1. Hard Assertions: 
+- If the assertion fails, the test execution is aborted, and no further steps are executed.
+import org.testng.Assert;
+assertEquals(): Checks if two values are equal.
+assertTrue(): Checks if a condition is true.
+assertFalse(): Checks if a condition is false.
+assertNull(): Checks if an object is null.
+assertNotNull(): Checks if an object is not null.
+assertSame(): Checks if two objects refer to the same object.
+assertNotSame(): Checks if two objects do not refer to the same object.
+
+
+2. Soft Assertions: 
+- The test continues even if an assertion fails. 
+All failures are reported at the end of the test execution.
+import org.testng.asserts.SoftAssert;
+softAssert.assertAll();

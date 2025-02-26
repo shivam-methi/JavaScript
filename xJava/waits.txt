@@ -1,0 +1,72 @@
+Waits:
+
+1. Implicit Wait:
+- Implicit Wait is a global wait applied to the entire WebDriver instance. 
+- It tells Selenium to poll the DOM for a specified amount of time when trying to find an element, 
+  before throwing a NoSuchElementException. 
+- Once set, it applies to all subsequent element searches.
+- Implicit Wait is suitable for simple cases where you expect elements to appear within a predictable time range. 
+- It doesn't apply to specific conditions but waits for all elements.
+    WebDriver driver = new ChromeDriver();
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    driver.findElement(By.id("elementId")).click();
+- If the element is found within 10 seconds, the script will proceed; otherwise, it will throw an exception.
+- Implicit wait is set once and applies to all elements in the script.
+
+
+2. Explicit Wait:
+- Explicit Wait is a more flexible and powerful type of wait that allows you to wait for a specific condition 
+  to be met (e.g., element to be clickable, element to be visible) before proceeding. 
+- It’s applied to a specific element or condition, not globally.
+- Explicit Wait is ideal when you need to wait for specific conditions like visibility, clickability, 
+  or the presence of an element before interacting with it.
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("elementId")));
+    element.click();
+- Selenium will wait up to 10 seconds for the element to become visible. 
+- Once the condition is satisfied, the script will proceed to click the element.
+
+
+3. Fluent Wait:
+- Fluent Wait is similar to Explicit Wait but offers more control over the waiting behavior. 
+- It allows you to specify the polling frequency that how often Selenium checks for the condition and can ignore specific exceptions 
+  during the waiting period. 
+- Fluent Wait is useful for handling unpredictable wait times or conditions.
+- Fluent Wait is best for scenarios where you need to repeatedly check for the presence or state of an element 
+  over a period of time. 
+- It is also useful when some conditions might cause temporary failures 
+  (e.g., elements not being immediately visible), and you want to ignore those exceptions temporarily.
+    Wait<WebDriver> fluentWait = new FluentWait<>(driver)
+    .withTimeout(Duration.ofSeconds(30))
+    .pollingEvery(Duration.ofSeconds(5))
+    .ignoring(NoSuchElementException.class);
+
+    WebElement element = fluentWait.until(ExpectedConditions.elementToBeClickable(By.id("elementId")));
+    element.click();
+-  Selenium will wait for up to 30 seconds, polling every 5 seconds to check if the element is clickable. 
+- If the element isn't found within 30 seconds, a NoSuchElementException will be thrown.
+
+
+4. Thread.sleep() (Hard Wait): 
+- It's a Java method to pause the execution of the script for a fixed amount of time. 
+- It’s known as a hard wait because the script will stop for the exact specified time regardless of 
+  whether the element is ready before that time.
+- This method is generally not recommended for web automation because it causes unnecessary delays 
+  and can lead to inefficiencies. 
+- However, it can be useful in rare cases where you need to ensure a fixed pause 
+  (e.g., for visual inspection or when waiting for an animation).
+  Thread.sleep(5000);  // Pauses the script for 5 seconds
+- The script will wait for exactly 5 seconds before moving to the next line, 
+  regardless of whether the element is ready sooner.
+
+
+Comparison of Waits::
+
+Wait Type	    Description	                                             When to Use	                                                                                                Pros	                                            Cons
+Implicit Wait	Global wait applied to all elements	                    For cases where all elements typically load within a predictable time frame	                                    Simple to implement, works globally	                Applies to all elements, may slow down tests
+Explicit Wait	Waits for a specific condition on a specific element	For dynamic elements that need time to load or require certain conditions (visibility, clickability)	        More flexible and customizable	                    Needs to be applied to each element
+Fluent Wait	    Similar to Explicit Wait but with control over polling	For scenarios with unpredictable wait times or where conditions may intermittently fail (e.g., dynamic content)	Customizable polling, ability to ignore exceptions	More complex to implement
+Thread.sleep()	Hardcoded wait for a fixed time	                        For rare cases where a fixed pause is needed (e.g., animation, visual inspection)	                            Simple to use	                                    Inefficient, can cause unnecessary delays
+
+
+

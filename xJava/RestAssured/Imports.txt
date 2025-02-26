@@ -1,0 +1,26 @@
+Imports:
+
+Core Rest Assured Imports:
+RestAssured: The main class used to configure and send API requests.
+Response: Represents the HTTP response returned from an API.
+RequestSpecification: Used to configure the request (e.g., setting headers, body, and parameters).
+
+
+Assertions and Validations:
+RestAssured.*: Provides access to methods like given(), when(), and then().
+RestAssuredMatchers.*: Contains additional matchers for XML responses (optional).
+Matchers.*: Provides matchers for validating response data, such as equalTo(), containsString(), etc.
+
+
+JSONPath and XMLPath Parsing:
+JsonPath: Used for extracting data from JSON responses.
+XmlPath: Used for extracting data from XML responses.
+
+
+Serialization and Deserialization (POJO Support):
+ObjectMapperType: Specifies which object mapper to use (e.g., Gson, Jackson) for JSON-POJO conversion.
+
+
+TestNG:
+import org.testng.annotations.Test;
+import static org.testng.Assert.*;

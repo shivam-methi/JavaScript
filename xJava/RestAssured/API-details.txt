@@ -1,0 +1,29 @@
+API tests using Rest Assured:
+
+Base URI or Base URL: The root URL where the API is hosted (e.g., https://api.example.com).
+
+Endpoint/Resource Path: The specific path of the API resource you're testing (e.g., /users, /orders/{id}).
+
+HTTP Method: The type of HTTP request you need to perform (e.g., GET, POST, PUT, DELETE, PATCH).
+
+Request Headers: Any required headers such as Content-Type, Authorization, or Accept.
+
+Query Parameters (optional): Parameters that can be passed in the URL (e.g., ?page=2&limit=10).
+
+Path Parameters (optional): Dynamic parts of the endpoint (e.g., /users/{id} where id is a path parameter).
+
+Request Body (for POST, PUT, PATCH): The data to be sent with the request, typically in JSON or XML format.
+
+Authentication Details: Type of authentication required, such as Bearer token, Basic Auth, Digest auth, 
+                        API key or OAuth.
+
+Expected Response: Details about what you expect from the response, including:
+                   Status code (e.g., 200 OK, 404 Not Found).
+                   Response body structure (JSON/XML fields).
+                   Response headers (e.g., Content-Type, Authorization).
+
+Response Validation Criteria: The specific validations you will perform, 
+                              such as checking values in the response body, status code, headers, etc.
+
+Test Data (if applicable): Any test data required for API requests (e.g., JSON body for POST/PUT requests).
+

@@ -1,0 +1,54 @@
+Challenges: 
+
+1. Handling Dynamic Web Elements in UI Automation:
+- dynamic elements such as pop-ups, modal dialogs, and elements whose IDs or classes changed frequently. 
+- This make it difficult for the automation scripts to locate and interact with these elements reliably.
+- so I used dynamic locators in Selenium, such as XPath and CSS Selectors with functions like contains() 
+  and starts-with() to locate elements based on partial attribute values. 
+- This allowed the scripts to be flexible and handle dynamic IDs or classes.
+- Additionally, I implemented Explicit Waits (WebDriverWait) to ensure that elements were fully loaded 
+  before interacting with them, reducing the number of failures caused by timing issues.
+
+
+2. Synchronization between UI and API Testing:
+- There were situations where the API tests and UI tests needed to be synchronized, 
+  especially when changes made via the UI (like job posting or bid submission) triggered background API calls. 
+- In some cases, API tests would pass, but the UI automation scripts would fail due to delays or incomplete UI updates.
+- I introduced custom wait conditions in the UI automation scripts to wait for specific elements or API responses 
+  before proceeding with the next step. This ensured that the UI was updated fully after API calls were made.
+
+
+3. Integration of Automation Scripts with CI/CD Pipelines (Jenkins, GitHub CI):
+- There were initial challenges in integrating the automation scripts with the CI/CD pipelines (Jenkins and GitHub CI). 
+- The tests needed to run across different environments (dev, staging, production), and managing environment-specific 
+  configurations became complex.
+- I externalized all environment configurations (base URLs, credentials, etc.) into properties files and made 
+  the automation scripts flexible enough to read configurations based on the environment in which they were executed.
+- To ensure smooth execution of automated tests in the CI pipeline, I worked closely with the DevOps team 
+  to integrate the scripts into Jenkins and GitHub CI, setting up scheduled test executions after every deployment. 
+  This ensured that both UI and API tests were run automatically after each build.
+
+
+4. Flaky Tests in Regression Suite: 
+- Some tests, especially those in the regression suite, flakiness occurs due to inconsistent page loads, 
+  network delays, or dependencies on third-party services. 
+- These tests would pass in one run and fail in the next, reducing the reliability of the suite.
+- I investigated the flaky tests using logs and screenshots captured during execution and identified 
+  that most failures were caused by timeouts or incomplete page loads.
+- To overcome this, I added retry mechanisms to re-run failed tests a limited number of times before 
+  marking them as failed. 
+- also improved the use of explicit waits to ensure that tests waited for elements to appear or actions 
+  to complete before proceeding.
+
+
+5. Handling Complex API Workflows with Rest Assured:
+- Some API workflows were highly complex, involving multiple chained API calls 
+  (e.g., creating a user, submitting a job bid, confirming the bid). 
+- It was difficult to validate each step of these workflows efficiently, and minor issues would break the entire flow.
+- I modularized the API tests, breaking down complex workflows into small, independent API operations. 
+- Each operation was tested in isolation first to ensure reliability before being integrated into larger workflows.
+- To manage and validate response data, I used JSON schema validation and response body assertions for each step. 
+- This made it easier to identify exactly where the API workflow was failing and allowed us to quickly debug issues.
+- I also created reusable methods for common API operations (e.g., login, authentication), 
+  reducing duplication and improving test maintainability.
+
